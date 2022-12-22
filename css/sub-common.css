@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* visual -S */
+.visual { 
+    box-sizing: border-box;
+    width: 100%; height: 380px; min-width: 1280px;
+    margin-bottom: 50px; padding-top: 159px;
+    background-repeat:  no-repeat; 
+}
+.visual .inner{ 
+    font: 700 60px/221px "nanumsquare"; color: #fff; text-align: center;
+}
+/* visual -E */
+
+/* lnb -S */
+.lnb {
+    width: 100%; height:52px;
+    margin-bottom: 170px;
+}
+.lnb .inner { text-align: center;}
+.lnb .lnb-list { 
+    display: inline-block;
+    font-size: 0;
+}
+.lnb .lnb-list li { display: inline-block;}
+.lnb .lnb-list li a { 
+    display: block;
+    height: 60px;
+    padding: 0 60px;
+    border: 1px solid #333;
+    font-weight: 500; font-size: 14px; line-height: 60px; color: #111;
+    background-color: #fff;
+}
+.lnb .lnb-list li:first-child a {border-radius: 17px 0 0 17px;}
+.lnb .lnb-list li:last-child a  {border-radius: 0 17px 17px 0;}
+.lnb .lnb-list li:hover a { 
+    background-color: #d4261f;
+    color: #ff0;
+}
+/* lnb -E */
+.sub-tit{ 
+    margin-bottom: 25px;
+    font-weight: 800; font-size: 60px; line-height: 64px; text-align: center;
+}
+.sub-description{ font-size: 24px; line-height: 28px; text-align: center;}

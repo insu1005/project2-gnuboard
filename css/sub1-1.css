@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+.visual { background-image: url(/img/sub-img/sub1-1-visual.png);}
+
+/* brand -s */
+.big-box-wrap { 
+    box-sizing: border-box;
+    margin-bottom:170px; padding-top: 142px;
+}
+.box-wrap {margin-bottom: 80px;}
+.box-wrap::before {content: "";
+    display: block;
+    width: 530px; height: 400px;
+    margin-right: 60px;
+    background-image: url(/img/sub-img/dough.png);
+    float: left;
+}
+.box-wrap:nth-child(2)::before {content: "";
+    display: none;
+}
+.box-wrap:nth-child(2) .empty {
+    width: 530px; height: 400px;
+    background-image: url(/img/sub-img/organic-box.png);
+    float: right;
+}
+.box-wrap:nth-child(3)::before { background-image: url(/img/sub-img/good-ingredient.png);}
+
+.box-wrap-regular{ 
+    float: left;
+    box-sizing: border-box;
+    width: 690px;
+    padding-top: 50px;
+}
+.box-wrap:nth-child(2) .box-wrap-regular{ 
+    float: left;
+    box-sizing: border-box;
+    width: 620px;
+    padding-left: 60px;
+}
+.box-wrap:nth-child(2) .box-wrap-regular .box-wrap-tit strong { font-weight: 800; color: #ff6101;}
+.box-wrap:nth-child(2) .box-wrap-regular .box-wrap-tit em { font-weight: 800; font-size: 45px; color: #e02d3c;}
+.box-wrap-tit { 
+    font-weight: 700; font-size: 45px; line-height: 49px; color: #333;
+    margin-bottom: 60px;
+}
+.box-wrap-description { 
+    color: #777
+
+}
+.box-wrap-tit strong { font-weight: 800; color:#e02d3c}
+.box-wrap-description strong{ 
+    display: block;    
+    font-weight: 400; font-size: 24px; line-height: 28px;
+}
+.box-wrap-description em{ 
+    display: block;
+    font-size: 24px; line-height: 28px;
+}
+.box-wrap-description p{ 
+    display: block;
+    font-size: 24px; line-height: 28px;
+}
+.box-wrap-description p:nth-of-type(2){ color: #e02d3c;}
+/* brand -e */
+
+/* identity -s */
+.identity-common { margin-bottom: 155px;}
+.identity-common:nth-child(2) {margin-bottom: 52px;}
+.identity-tit { 
+    float: left;
+    width: 310px; height: 111px;
+    margin-right: 115px;
+    font-weight: 700; font-size: 45px; line-height: 111px; color:#555;
+}
+.identity-common img {float: left;}
+.identity-common p {
+    float: left;
+    margin-right: 70px;
+    text-align: center;
+    font-size: 24px; line-height: 28px; color: #555;
+}
+.identity-common p::before {content:"";
+    display: block;
+    width: 200px; height: 80px;
+    background-color: #d4261f;
+    margin-bottom: 15px;
+}
+.identity-common p:nth-child(2):before{
+    background-color: #f39800;
+}
+.identity-common p:nth-child(3):before{
+    background-color: #edbe16;
+}
+.identity-description{
+    font-size: 24px; line-height: 28px; color: #555;
+}
+/* identity -e */
+
+/* interior -s */
+.interior-wrap img { 
+    display: block;
+    width: 460px; height: 274px;
+    margin: 0 auto 40px; 
+}
+.interior-description strong { 
+    display: block;
+    margin-bottom: 34px;
+    font-weight: 400; font-size: 24px; line-height: 34px; color: #555;
+}
+.interior-description em {
+    display: block; 
+    margin-bottom: 34px;
+    font-weight: 400; font-size: 24px; line-height: 34px; color: #555;
+}
+.interior-description p { 
+    margin-bottom: 34px;
+    font-weight: 400; font-size: 24px; line-height: 34px; color: #555;
+}
+/* interior -e */
