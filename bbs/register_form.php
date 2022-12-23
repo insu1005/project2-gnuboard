@@ -127,7 +127,7 @@ if ($w == "") {
     alert('w 값이 제대로 넘어오지 않았습니다.');
 }
 
-include_once('./_head.php');
+include_once('./_head-member.php');
 
 // 회원아이콘 경로
 $mb_icon_path = G5_DATA_PATH.'/member/'.substr($member['mb_id'],0,2).'/'.get_mb_icon_name($member['mb_id']).'.gif';
