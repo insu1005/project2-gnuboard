@@ -8,84 +8,34 @@ include_once(G5_PATH.'/head-sub-1.php');
 ?>
 <section class="sub-common sub1-1">
     <div class="inner">
-        <article class="regular brand-sub">
-            <h2 class="sub-tit">브랜드 소개</h2>
-            <p class="sub-description">항상 여러분과 함께하는 최고의 브랜드!</p>
-            <div class="big-box-wrap">
-                <div class="box-wrap clearfix">
-                    <div class="box-wrap-regular">
-                        <h4 class="box-wrap-tit">우리쌀과 보리, 조, 밀,<br> 검은깨로 만든 <strong>웰빙도우피자입니다.</strong></h4>
-                        <div class="box-wrap-description">
-                            <strong>토핑만큼 도우의 맛이 중요합니다.</strong>
-                            <em>오구쌀피자는 쫀득하고 고소한 쌀도우피자입니다.</em>
-                            <p>오구쌀피자는 타공팬을 사용한 피자로 기름기가 없고 담백합니다.</p>
-                            <p>그래서 건강한 피자입니다.</p>
-                        </div>
+        <article class="regular company">
+                <h2 class="sub-tit">회사 소개</h2>
+                <p class="sub-description">정직하게 만들어 맛있는 피자 <strong>(주)오구본가입니다.</strong></p>
+                <div class="company-wrap">
+                    <div class="company-brand clearfix">
+                        <img src="/img/sub-img/brand-model.png" alt="안녕하세요!! 여러분과 함께하는 가성비 피자 오구쌀 피자입니다!">
+                        <img src="/img/sub-img/aboutus-logo.png" alt="저희 로고쌀만의 트레이드 마크 항상 오구쌀 피자와 함께하세요!">
+                    </div>
+                    <div class="company-description">
+                        <h3>안녕하세요. <strong>(주)오구본가입니다.</strong></h3>
+                        <strong>오구피자 체인본사 임직원은 오랜 기간 동안 실무 경영 및 개발 노하우를 바탕으로 오구피자만의 
+                            독특한 도우를 만들어(쌀과 보리, 조, 검은깨, 밀 등 으로 만든 오곡웰빙 도우)담백하고 고소한 맛과 
+                            영양으로 남녀노소 누구나 즐겨 먹을 수 있는 피자를 탄생 시켰습니다.
+                        </strong>
+                        <em>최소의 비용으로 최고의 가치를 부여한 피자를 만듦으로써 오구피자 점주님께는 고수익율, 
+                            고객님께는 저렴한 가격으로 경제적 부담을 줄여 언제나 즐길 수 있는 기회를 드리고 있습니다.
+                        </em>
+                        <p>항상 초심을 잃지 않는 자세로 고객의 입장에서 생각하고, 끊임없는 개발과 투자로 가맹점주님의 
+                            성공을 향한 길잡이가 되도록 최선의 노력을 다하겠습니다.
+                        </p>
+                    </div>
+                    <img src="/img/sub-img/brand-model2.png" alt="이제까지 저희 오구쌀의 성장과정 말씀드립니다!!">
+                    <div class="company-detail">    
+                        <strong>2006년 5월에 프랜차이즈 설립 후 2011년 5월에 가맹점 500호를 돌파하였습니다.</strong>
+                        <em>국산 쌀과 보리, 조, 밀에 검은깨를 첨가한 소위 오곡 웰빙 도우 사용을 표방하고 있으며, 꽤나 다양한 토핑을 고를 수 있고 치즈 크러스트나 고구마 무스 유무를 선택할 수 있는 등 선택의 폭은 괴장히 넓은 편입니다. 하지만 저희는 고객여러분들을 위해 저렴한 가격으로 제공하고 있습니다. 일부 메뉴에는 매운 소스를 넣기도 합니다.</em>
+                        <p>500점포 돌파와 함께 제2브랜드인 오구 치킨이 발족되었고, 이와 연계되어 치킨+피자 세트도 판매되고 있다.<p>
                     </div>
                 </div>
-                <div class="box-wrap clearfix">
-                    <div class="box-wrap-regular">
-                        <h4 class="box-wrap-tit"><strong>100%</strong><em>자연치즈</em>를 사용합니다.</h4>
-                        <div class="box-wrap-description">
-                            <strong>토핑치즈 - 자연치즈100%</strong>
-                            <em>주문 즉시 도우를 손으로 두드리고 펴서</em>
-                            <p>신선한 재료를 토핑하여 맛있게 제공합니다.</p>
-                            <p>그래서 맛있는 피자입니다.</p>
-                        </div>
-                    </div>
-                    <div class="empty"></div>
-                </div>
-                <div class="box-wrap clearfix">
-                    <div class="box-wrap-regular">
-                        <h4 class="box-wrap-tit"><strong>엄선된 토핑과 재료만을 사용하여</strong><br>안심하고 드실 수 있습니다.</h4>
-                        <div class="box-wrap-description">
-                            <strong>오구쌀피자는 원산지 표시제를 준수합니다.</strong>
-                            <em>또한 '맛없는 피자는 만들지도, 고객에게 제공하지도 않는다.'는</em>
-                            <p>신념 아래 피자를 만듭니다.</p>
-                            <p>그래서 정직한 피자입니다</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <article class="regular identity">
-            <h3 class="sub-tit">아이덴티티</h3>
-            <p class="sub-description">오구쌀만의 차별성! 막강한 개성!</p>
-            <div class="big-box-wrap">
-                <figure class="identity-common clearfix">
-                    <h4 class="identity-tit">BRAND LOGO</h4>
-                    <img src="/img/sub-img/identity-logo.jpg" alt="막강한 유기농 브랜드 오구쌀피자!">
-                </figure>
-                <figure class="identity-common clearfix">
-                    <h4 class="identity-tit">COLOR PALLET</h4>
-                    <div class="color clearfix">
-                        <p>MAIN COLOR</p>
-                        <p>SUB COLOR</p>
-                        <p>POINT COLOR</p>
-                    </div>
-                </figure>
-                <p class="identity-description">59피자라는 명칭은 가장 기본적이고 저렴한 콤비네이션 피자가 5,900원인 것에서 유래하였습니다.<br> 
-                    광고 카피인 '맛있어서 오구, 생각나서 오구' 역시 여기에서 나왔습니다.</p>
-            </div>
-        </article>
-        <article class="regular interior">
-            <h3 class="sub-tit">인테리어</h3>
-            <p class="sub-description">오구쌀만의 특별한 장소!</p>
-            <div class="big-box-wrap">
-                <figure class="interior-wrap">
-                    <img src="/img/sub-img/interior.png" alt="오구쌀만의 특별한 장소!">
-                    <div class="interior-description">
-                        <strong>2006년 처음 시작된 59쌀피자 프랜차이즈가 2011년 현재 오구피자 전국 가맹점 500호점을 돌파했습니다.<br>  
-                            오구피자만의 독특한 쌀과 검은깨,  기타 웰빙 재료로 기름기를 없애고 담백한 맛과 영향을 고려하여 남녀노소 누구나<br> 
-                            즐길 수 있는 저렴한 가격의 쌀피자로 건강한 맛의 이미지를 보여주고 있습니다.</strong>
-                        <em>현대인의 감각에 맞춘 세련된 인테리어와 넓은 실내 공간으로 많은 사람들이 매장에 방문해 음식을 즐길 수 있도록  되어있습니다.<br>
-                            20여가지 종류의 피자와 스파게티, 오구치킨이 주요 판매 제품입니다.</em>
-                        <p>저가형 피자 가게지만 비교적 세련된 인테리어였습니다. 로고에 사용된 색상이 인테리어에 적절히 조합되어 안정적인 분위기입니다.<br>
-                            ‘59'라는 것을 맛있어서 오구, 생각나서 오구라는 문구를 통해 센스있게 표현해 재미를 더 했습니다.<br>
-                            또 로고 안에 쌀을 강조하는 이미지를 넣어 재미도 더 하고 오구피자만의 쌀로 만든다라는 특징을 잘 살린 것 같습니다.</p>
-                    </div>
-                </figure>
-            </div>
         </article>
     </div>
 </section>
