@@ -97,6 +97,8 @@
 .tooltip:before {content:"";position:absolute;top:0;left:-10px;width:0;height:0;border-style:solid;border-top:0px solid transparent;border-bottom:10px solid transparent;border-left:0;border-right:10px solid #000}
 
 /* 아이디/비밀번호 찾기 */
+.find { padding: 200px 0;}
+#find_info { width: 500px; margin: 0 auto;}
 #find_info h3 {display:none;margin-bottom:30px;text-align:center;font-size:1.1em;}
 #find_info .new_win_con {background:#f7f7f7;}
 #find_info.cert .new_win_con {width:460px;float:left;}
@@ -106,6 +108,7 @@
 #find_info p {line-height:1.5em}
 #find_info #mb_email {margin:10px 0}
 #find_info .find_btn .btn_submit {width:30%;word-break:keep-all;}
+#captcha {margin-bottom: 50px;}
 
 /* 비밀번호 재설정 */
 #pw_reset #info_fs {margin-bottom: 10px}
@@ -139,7 +142,7 @@
 #member_cert_refresh #find_info .find_btn > div {margin:10px 0}
 
 /* 로그인 */
-#mb_login {}
+#mb_login { margin: 300px auto;}
 #mb_login h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 #login_fs {padding:35px}
 #mb_login #login_fs .frm_input {margin:0 0 10px}
