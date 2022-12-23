@@ -32,11 +32,11 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             <h2 class="hidden">메인메뉴</h2>
             <ul>
                 <li class="depth1">
-                    <a href="#">브랜드</a>
+                    <a href="/sub/sub1-1.php">브랜드</a>
                     <ul class="depth2">
-                        <li><a href="#">브랜드 소개</a></li>
-                        <li><a href="#">회사소개</a></li>
-                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="/sub/sub1-1.php">브랜드 소개</a></li>
+                        <li><a href="/sub/sub1-2.php">회사소개</a></li>
+                        <li><a href="/sub/sub1-3.php">오시는 길</a></li>
                     </ul>
                 </li>
                 <li class="depth1">

@@ -8,8 +8,8 @@
     <div class="inner clearfix">
         <h2 class="f-logo">오구쌀피자</h2>
         <ul class="f-menu">
-            <li><a href="#">브랜드소개</a></li>
-            <li><a href="#">오시는길</a></li>
+            <li><a href="/sub/sub1-1.php">브랜드소개</a></li>
+            <li><a href="/sub/sub1-3.php">오시는길</a></li>
             <li><a href="<?php echo get_pretty_url('content', 'privacy'); ?>">개인정보처리방침</a></li>
             <li><a href="#">이메일무단수집거부</a></li>
         </ul>

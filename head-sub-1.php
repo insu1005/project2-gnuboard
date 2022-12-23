@@ -14,16 +14,10 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <!-- stylesheet -s -->
 <link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/sub-common.css">
 <link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/sub1-1.css">
 <!-- stylesheet -e -->
-<!-- big-visual link-s-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/jquery.vide.js"></script>
-<!-- big-visual link-e-->
-<!-- slide link-s -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<!-- slide link-e -->
 <!-- 상단 시작 { -->
     <header class="header">
         <div class="inner">
@@ -32,11 +26,11 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             <h2 class="hidden">메인메뉴</h2>
             <ul>
                 <li class="depth1">
-                    <a href="#">브랜드</a>
+                    <a href="/sub/sub1-1.php">브랜드</a>
                     <ul class="depth2">
-                        <li><a href="#">브랜드 소개</a></li>
-                        <li><a href="#">회사소개</a></li>
-                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="/sub/sub1-1.php">브랜드 소개</a></li>
+                        <li><a href="/sub/sub1-2.php">회사소개</a></li>
+                        <li><a href="//sub/sub1-3.php">오시는 길</a></li>
                     </ul>
                 </li>
                 <li class="depth1">
@@ -98,4 +92,16 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <!-- 콘텐츠 시작 { -->
     <main>
+    <div class="visual">
+            <div class="inner">브랜드</div>
+        </div>
+        <div class="lnb">
+            <div class="inner">
+                   <ul class="lnb-list">
+                      <li class="on"><a href="/sub/sub1-1.php">브랜드 소개</a></li>
+                      <li><a href="/sub/sub1-2.php">회사소개</a></li>
+                      <li><a href="/sub/sub1-3.php">오시는 길</a></li>
+                   </ul>
+            </div>
+        </div>
         <?php if (!defined("_INDEX_")) { ?><h2 id="container_title"><span title="<?php echo get_text($g5['title']); ?>"><?php echo get_head_title($g5['title']); ?></span></h2><?php }
