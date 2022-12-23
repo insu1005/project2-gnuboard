@@ -36,28 +36,6 @@
     </div>
 </footer>
 
-<script>
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
-      freeMode: true,
-      watchSlidesProgress: true,
-    });
-    var swiper2 = new Swiper(".mySwiper2", {
-        loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-        swiper: swiper,
-        },
-    });
-</script>
-
 <?php
 if(G5_DEVICE_BUTTON_DISPLAY && !G5_IS_MOBILE) {
      ?>
