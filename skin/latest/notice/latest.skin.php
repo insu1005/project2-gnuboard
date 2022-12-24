@@ -7,9 +7,10 @@ add_javascript('<script src="'.G5_JS_URL.'/jquery.bxslider.js"></script>', 10);
 $list_count = (is_array($list) && $list) ? count($list) : 0;
 ?>
 
-<div class="notice ft_cnt">
-    <h2><a href="<?php echo get_pretty_url($bo_table); ?>"><?php echo $bo_subject ?></a></h2>
-    <ul>
+<div class="notice ft_cnt event">
+    <h2><a href="<?php echo get_pretty_url($bo_table); ?>"><div class="hidden"><?php echo $bo_subject ?></div>EVENT</a></h2>
+    <img src="/img/smallhouse.png" alt="오구쌀피자가 보여주는 이벤트!">
+    <ul class="event-list">
     <?php for ($i=0; $i<$list_count; $i++) {  ?>
         <li>
             <?php
@@ -40,4 +41,5 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
     <li class="empty_li">게시물이 없습니다.</li>
     <?php }  ?>
     </ul>
+    <a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=notice" class="lt_more event-more"><span class="sound_only">이벤트</span>more</a>
 </div>

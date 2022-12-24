@@ -274,7 +274,7 @@ include_once(G5_PATH.'/head.php');
     <?php
     // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
     // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
-    echo latest('pic_block', 'notice', 5, 10);
+    echo latest('notice', 'notice', 5, 10);
     ?>
 </div>
 <div class="hd_sch_wr">
@@ -324,7 +324,7 @@ include_once(G5_PATH.'/head.php');
     // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
     // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
     echo latest('pic_block', 'gallery', 1, 10);
-    echo latest('pic_block', 'notice', 5, 10);
+    echo latest('pic_list', 'notice', 5, 10);
     ?>
 </div>
 <?php

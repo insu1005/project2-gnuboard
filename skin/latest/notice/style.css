@@ -1,12 +1,59 @@
 @charset "utf-8";
 
 /* 새글 스킨 (latest) */
-.notice {position:relative;padding:15px 50px}
-.notice h2 {margin-bottom:20px}
-.notice h2 a {font-size:1.2em;color:#fff}
-.notice li {text-overflow:ellipsis;overflow:hidden;white-space:nowrap;border-bottom:1px solid #343434}
-.notice li a, .notice li.empty_li {color:#e3e3e3;padding:11px 0;display:inline-block}
-.notice li .lock_icon {display:inline-block;line-height:14px;width:16px;font-size:0.833em;color:#4f818c;background:#cbe3e8;text-align:center;border-radius:2px;font-size: 12px;border:1px solid #a2c6ce;vertical-align:baseline}
-.notice li .new_icon {display:inline-block;line-height:16px;width:16px;font-size:0.833em;color:#ffff00;background:#6db142;text-align:center;margin-right:3px;border-radius:2px;vertical-align:baseline}
+.notice {
+    box-sizing: border-box;
+    float: left;
+    width: 655px; height: 430px;
+    margin-top: 23px; padding: 48px 38px 0;
+    border: 5px solid #000; border-radius: 60px 60px 0 0;
+    position: relative;
+}
+.new_icon { display: none;}
+.notice h2 {
+    font-weight: 800; font-size: 30px; line-height: 34px; color: #333;
+    margin-bottom: 35px;
+}
+.event img { 
+    float: left; 
+    margin-right: 40px;
+  }
+.event-list {
+    box-sizing: border-box; 
+    float: left;
+    padding-top: 40px;
+}
+.notice li {
+    margin-bottom: 22px;
+    text-overflow:ellipsis; white-space:nowrap;
+    position: relative;
+}
+.notice li::before { content: "";
+  display: block;
+  width: 7px; height: 16px;
+  background-color: #e02d3c;
+  position: absolute; left: -10px; top: 0;
+  opacity: 0;
+  transition: all 0.3s;        
+}
+.notice li a, .notice li.empty_li {font-weight: 700; font-size: 14px; line-height: 18px; color: #333;}
+/* .notice li .lock_icon {display:inline-block;line-height:14px;width:16px;font-size:0.833em;color:#4f818c;background:#cbe3e8;text-align:center;border-radius:2px;font-size: 12px;border:1px solid #a2c6ce;vertical-align:baseline} */
+/* .notice li .new_icon {display:inline-block;line-height:16px;width:16px;font-size:0.833em;color:#ffff00;background:#6db142;text-align:center;margin-right:3px;border-radius:2px;vertical-align:baseline} */
 .notice .cnt_cm {background:#5c85c1;color:#fff;font-size:11px;height:16px;line-height:16px;padding:0 5px;border-radius:3px;white-space:nowrap;margin-left:5px}
 .notice li.empty_li {border-bottom:0;line-height:120px}
+.event-more {
+    font-size: 18px; line-height: 22px;
+    position: absolute; right: 74px; top: 57px;
+    transition: all 0.3s;
+  }
+  .event-more::after {content: "";
+    display: block;
+    width: 15px; height: 15px;
+    background-image: url(/img/more-button.png);
+    position: absolute; right: -20px; top: 3px;
+    transition: all 0.3s;
+  }
+
+.notice li:hover::before {opacity: 1;}
+.event-more:hover { font-weight: 800; color:#e02d3c}
+.event-more:hover::after {transform: rotate(45deg);}
