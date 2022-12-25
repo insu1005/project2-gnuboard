@@ -43,7 +43,7 @@
 .notice li.empty_li {border-bottom:0;line-height:120px}
 .event-more {
     font-size: 18px; line-height: 22px;
-    position: absolute; right: 74px; top: 57px;
+    position: absolute; right: 50px; top: 100px;
     transition: all 0.3s;
   }
   .event-more::after {content: "";
