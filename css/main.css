@@ -313,12 +313,12 @@
   background-color: #fff;
   border-radius: 59px;
 }
-.market-search fieldset {
+.market-search form {
   display: inline-block;
   width: 485px; height: 65px;
   position: relative;
 }
-.market-search fieldset input {
+.market-search form input {
   box-sizing: border-box;
   padding-top: 15px;
   width: 395px; height:43px;

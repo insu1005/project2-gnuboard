@@ -70,7 +70,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     <a href="#">커뮤니티</a>
                     <ul class="depth2">
                         <li><a href="#">이벤트</a></li>
-                        <li><a href="#">공지사항</a></li>
+                        <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=notice">공지사항</a></li>
                         <li><a href="#">MEDIA</a></li>
                         <li><a href="#">고객의 소리</a></li>
                         <li><a href="#">점주게시판</a></li>

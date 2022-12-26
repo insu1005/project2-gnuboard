@@ -20,9 +20,16 @@ a { text-decoration: none; font: inherit; color: inherit;}
 ul, dl,dt,dd {margin:0;padding:0;list-style:none}
 legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
 label, input, button, select, img {vertical-align:middle;font-size:1em}
-input, button {margin:0;padding:0;font-family:'Malgun Gothic', dotum, sans-serif;font-size:1em}
+input, button {margin:0;padding:0;}
 input[type="submit"] {cursor:pointer}
-button {cursor:pointer}
+button { 
+  width: 43px; height: 43px;
+  border: 0;
+  text-indent: -9999px;
+  background-image: url(/img/search.png); background-color: white;
+  position: absolute; right: 0; top: 0;
+  cursor: pointer;
+}
 
 textarea, select {font-family:'Malgun Gothic', dotum, sans-serif;font-size:1em}
 select {margin:0}
