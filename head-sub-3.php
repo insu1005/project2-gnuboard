@@ -14,16 +14,10 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <!-- stylesheet -s -->
 <link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/sub-common.css">
 <link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/sub1-1.css">
 <!-- stylesheet -e -->
-<!-- big-visual link-s-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/jquery.vide.js"></script>
-<!-- big-visual link-e-->
-<!-- slide link-s -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<!-- slide link-e -->
 <!-- 상단 시작 { -->
     <header class="header">
         <div class="inner">
@@ -40,9 +34,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     </ul>
                 </li>
                 <li class="depth1">
-                    <a href="/sub/sub2-1.php">메뉴</a>
+                    <a href="#">메뉴</a>
                     <ul class="depth2">
-                        <li><a href="/sub/sub2-1.php">신메뉴</a></li>
+                        <li><a href="#">신메뉴</a></li>
                         <li><a href="#">반미터 피자</a></li>
                         <li><a href="#">클래식 쌀피자</a></li>
                         <li><a href="#">프리미엄 쌀피자</a></li>
@@ -50,26 +44,26 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     </ul>
                 </li>
                 <li class="depth1">
-                    <a href="/sub/sub3-1.php">매장찾기</a>
+                    <a href="#">매장찾기</a>
                     <ul class="depth2">
-                        <li><a href="/sub/sub3-1.php">신규오픈</a></li>
+                        <li><a href="#">신규오픈</a></li>
                         <li><a href="#">매장찾기</a></li>
                         <li><a href="#">우수매장</a></li>
                     </ul>
                 </li>
                 <li class="depth1">
-                    <a href="/sub/sub4-1.php">창업</a>
+                    <a href="#">창업</a>
                     <ul class="depth2">
-                        <li><a href="/sub/sub4-1.php">브랜드 경쟁력</a></li>
+                        <li><a href="#">브랜드 경쟁력</a></li>
                         <li><a href="#">성공 스토리</a></li>
                         <li><a href="#">창업 및 비용</a></li>
                         <li><a href="#">가맹문의</a></li>
                     </ul>
                 </li>
                 <li class="depth1">
-                    <a href="/sub/sub5-1.php">커뮤니티</a>
+                    <a href="#">커뮤니티</a>
                     <ul class="depth2">
-                        <li><a href="/sub/sub5-1.php">이벤트</a></li>
+                        <li><a href="#">이벤트</a></li>
                         <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=notice">공지사항</a></li>
                         <li><a href="#">MEDIA</a></li>
                         <li><a href="#">고객의 소리</a></li>
@@ -98,4 +92,16 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <!-- 콘텐츠 시작 { -->
     <main>
+    <div class="visual">
+            <div class="inner">브랜드</div>
+        </div>
+        <div class="lnb">
+            <div class="inner">
+                   <ul class="lnb-list">
+                      <li class="on"><a href="/sub/sub1-1.php">신규오픈</a></li>
+                      <li><a href="/sub/sub1-2.php">매장찾기</a></li>
+                      <li><a href="/sub/sub1-3.php">우수매장</a></li>
+                   </ul>
+            </div>
+        </div>
         <?php if (!defined("_INDEX_")) { ?><h2 id="container_title"><span title="<?php echo get_text($g5['title']); ?>"><?php echo get_head_title($g5['title']); ?></span></h2><?php }
