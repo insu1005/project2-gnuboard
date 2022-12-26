@@ -254,29 +254,14 @@ include_once(G5_PATH.'/head.php');
                     <img src="/img/hot-event.png" alt="12월 많이 춥죠?? 그래서 오구쌀 피자가 준비 했습니다. 여러분을 위한 hot이벤트!" class="hot-event-img">
                     <a href="#" class="hot-more">MORE</a>
                 </figure>
-                <figure class="event">
-                    <h4 class="event-tit">EVENT</h4>
-                    <img src="/img/smallhouse.png" alt="오구쌀피자가 보여주는 이벤트!">
-                    <ul class="event-list">
-                        <li><a href="#">2022 추석 연휴 매장 휴무리스트!</a></li>
-                        <li><a href="#">2022 신메뉴 출시!</a></li>
-                        <li><a href="#">KBS2일일드라마'사랑의 꽈배기' 제작지원</a></li>
-                        <li><a href="#">인산염NO!불린새우 NO! 자연새우 사용 공지</a></li>
-                        <li><a href="#">&#60;2021&#62;환경개선 착한동행프로젝트 4차</a></li>
-                    </ul>
-                    <a href="#" class="event-more">more</a>
-                </figure>
+            <?php
+            // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
+            // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
+            echo latest('notice', 'notice', 25, 10);
+            ?>
             </div>
         </div>
     </section>
-    
-<div class="latest_wr">
-    <?php
-    // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
-    // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
-    echo latest('notice', 'notice', 5, 10);
-    ?>
-</div>
 <div class="hd_sch_wr">
             <fieldset id="hd_sch">
         <legend>사이트 내 전체검색</legend>

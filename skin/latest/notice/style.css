@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 새글 스킨 (latest) */
-.notice {
+div.notice {
     box-sizing: border-box;
     float: left;
     width: 655px; height: 430px;
@@ -41,18 +41,18 @@
 /* .notice li .new_icon {display:inline-block;line-height:16px;width:16px;font-size:0.833em;color:#ffff00;background:#6db142;text-align:center;margin-right:3px;border-radius:2px;vertical-align:baseline} */
 .notice .cnt_cm {background:#5c85c1;color:#fff;font-size:11px;height:16px;line-height:16px;padding:0 5px;border-radius:3px;white-space:nowrap;margin-left:5px}
 .notice li.empty_li {border-bottom:0;line-height:120px}
-.event-more {
+.notice.ft_cnt .event-more {
     font-size: 18px; line-height: 22px;
-    position: absolute; right: 50px; top: 100px;
+    position: absolute; right: 100px; top: 50px;
     transition: all 0.3s;
   }
-  .event-more::after {content: "";
-    display: block;
-    width: 15px; height: 15px;
-    background-image: url(/img/more-button.png);
-    position: absolute; right: -20px; top: 3px;
-    transition: all 0.3s;
-  }
+.event-more::after {content: "";
+  display: block;
+  width: 15px; height: 15px;
+  background-image: url(/img/more-button.png);
+  position: absolute; right: -20px; top: 3px;
+  transition: all 0.3s;
+}
 
 .notice li:hover::before {opacity: 1;}
 .event-more:hover { font-weight: 800; color:#e02d3c}
