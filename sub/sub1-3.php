@@ -44,21 +44,27 @@ include_once(G5_PATH.'/head-sub-1.php');
                 </div>
                 <div class="bus-box clearfix">
                     <h3 class="bus-tit">버스</h3>
+                    
                     <ul class="bus-direction">
-                        <li><strong class="line-1">간선</strong>1</li>
-                        <li><strong class="line-1">간선</strong>11</li>
-                        <li><strong class="line-1">간선</strong>12</li>
-                        <li><strong class="line-1">간선</strong>43</li>
-                        <li><strong class="line-1">간선</strong>45</li>
-                        <li><strong class="line-1">간선</strong>46</li>
-                        <li><strong class="line-1">간선</strong>47</li>
-                        <li><strong class="line-2">지선</strong>558</li>
-                        <li><strong class="line-2">지선</strong>561</li>
-                        <li><strong class="line-2">지선</strong>565</li>
-                        <li><strong class="line-2">지선</strong>579</li>
-                        <li><strong class="line-2">지선</strong>586</li>
-                        <li><strong class="line-3">일반</strong>88</li>
-                        <li><strong class="line-4">좌석</strong>302</li>
+                        <li class="bupyeong">부평역</li>
+                        <ul class="line-1 clearfix">
+                            <li><strong class="line-1-common">간선</strong>1</li>
+                            <li><strong class="line-1-common">간선</strong>11</li>
+                            <li><strong class="line-1-common">간선</strong>12</li>
+                            <li><strong class="line-1-common">간선</strong>43</li>
+                            <li><strong class="line-1-common">간선</strong>45</li>
+                            <li><strong class="line-1-common">간선</strong>46</li>
+                            <li><strong class="line-1-common">간선</strong>47</li>
+                        </ul>
+                        <ul class="line-2 clearfix">
+                            <li><strong class="line-2-common">지선</strong>558</li>
+                            <li><strong class="line-2-common">지선</strong>561</li>
+                            <li><strong class="line-2-common">지선</strong>565</li>
+                            <li><strong class="line-2-common">지선</strong>579</li>
+                            <li><strong class="line-2-common">지선</strong>586</li>
+                        </ul>
+                        <li class="line-3"><strong>일반</strong>88</li>
+                        <li class="line-4"><strong>좌석</strong>302</li>
                     </ul>
                 </div>
             </div>
