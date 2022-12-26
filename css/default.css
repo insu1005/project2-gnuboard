@@ -23,11 +23,7 @@ label, input, button, select, img {vertical-align:middle;font-size:1em}
 input, button {margin:0;padding:0;}
 input[type="submit"] {cursor:pointer}
 button { 
-  width: 43px; height: 43px;
-  border: 0;
-  text-indent: -9999px;
-  background-image: url(/img/search.png); background-color: white;
-  position: absolute; right: 0; top: 0;
+  
   cursor: pointer;
 }
 

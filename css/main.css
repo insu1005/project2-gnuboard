@@ -326,7 +326,7 @@
   border: 0;
 }
 input::placeholder { font-size: 30px; line-height: 43px; color:#777; text-align: center;}
-.market-search fieldset button{
+.market-search form .market-search-submit{
   width: 43px; height: 43px;
   border: 0;
   text-indent: -9999px;

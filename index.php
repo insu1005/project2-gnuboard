@@ -232,7 +232,7 @@ include_once(G5_PATH.'/head.php');
                             <input type="hidden" name="sfl" value="wr_subject||wr_content">
                             <input type="hidden" name="sop" value="and">
                             <label for="market" class="hidden">검색어 입력</label><input type="text" name="market" id="market" placeholder="오구오구 같이 찾아봐요!">
-                            <button type="submit" id="sch_submit" value="검색"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">검색</span></button>
+                            <button type="submit" id="sch_submit" value="검색" class="market-search-submit"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">검색</span></button>
                         </form>
                     </fieldset>
                     <script>
@@ -279,7 +279,7 @@ include_once(G5_PATH.'/head.php');
                 <h3 class="tit">COMMNUNITY <strong>오구쌀피자</strong></h3>
                 <p class="description"> <strong>오구오구!</strong> 여러분들과 함께하는 소식!</p>
             </div>
-            <div class="commnity-wrap clearfix">
+            <div class="commnity-wrap latest_wr clearfix">
                 <figure class="hot-event">
                     <h4 class="hot-event-tit"><strong>오구오구!</strong><span>HOT해HOT해!!</span></h4>
                     <img src="/img/hot-event.png" alt="12월 많이 춥죠?? 그래서 오구쌀 피자가 준비 했습니다. 여러분을 위한 hot이벤트!" class="hot-event-img">
