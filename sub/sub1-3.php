@@ -38,11 +38,11 @@ include_once(G5_PATH.'/head-sub-1.php');
             <h2 class="sub-tit">대중교통</h2>
             <p class="sub-description">오구오구! 여러분 편안하게 조심히 살펴 오세요!</p>
             <div class="transportation-wrap">
-                <div class="subway-box">
+                <div class="subway-box clearfix">
                     <h3 class="subway-tit">지하철</h3>
-                    <p class="subway-direction">부평역 출구: 약 582m (10분) 도보</p>
+                    <p class="subway-direction"><strong>부평역 출구</strong> : 약 582m (10분) 도보</p>
                 </div>
-                <div class="bus-box">
+                <div class="bus-box clearfix">
                     <h3 class="bus-tit">버스</h3>
                     <ul class="bus-direction">
                         <li><strong class="line-1">간선</strong>1</li>
