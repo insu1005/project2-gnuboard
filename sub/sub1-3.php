@@ -8,7 +8,7 @@ include_once(G5_PATH.'/head-sub-1.php');
 ?>
 <section class="sub-common sub1-1">
     <div class="inner">
-        <article class="regular brand-sub">
+        <article class="regular location">
             <h2 class="sub-tit">오시는길</h2>
             <p class="sub-description">오구오구! 여러분에게 항상 열려있는 공간! 오구쌀피자 입니다!</p>
             <figure class="location-wrap">

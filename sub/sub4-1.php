@@ -6,85 +6,94 @@ if (!defined('_GNUBOARD_')) exit;
 
 include_once(G5_PATH.'/head-sub-4.php');
 ?>
-<section class="sub-common sub1-1">
+<section class="sub-common sub4-1">
     <div class="inner">
-        <article class="regular brand-sub">
-            <h2 class="sub-tit">브랜드 소개</h2>
-            <p class="sub-description">항상 여러분과 함께하는 최고의 브랜드!</p>
-            <div class="big-box-wrap">
-                <div class="box-wrap clearfix">
+        <article class="regular strength">
+            <h2 class="sub-tit">브랜드 경쟁력</h2>
+            <p class="sub-description">오구오구! 오구쌀 피자만의 강점! 차별성!</p>
+            <div class="strength-wrap">
+                <div class="analysis clearfix">
                     <div class="box-wrap-regular">
-                        <h4 class="box-wrap-tit">우리쌀과 보리, 조, 밀,<br> 검은깨로 만든 <strong>웰빙도우피자입니다.</strong></h4>
+                        <h4 class="box-wrap-tit"><strong>01</strong><em>세밀한 <span>상권분석</span></em></h4>
                         <div class="box-wrap-description">
-                            <strong>토핑만큼 도우의 맛이 중요합니다.</strong>
-                            <em>오구쌀피자는 쫀득하고 고소한 쌀도우피자입니다.</em>
-                            <p>오구쌀피자는 타공팬을 사용한 피자로 기름기가 없고 담백합니다.</p>
-                            <p>그래서 건강한 피자입니다.</p>
+                            <strong>각 지역별 상권분석팁을 투입, 분석하여 최소의 비용으로<br>
+                                    최대의 효과가 기대되는 점포추천
+                            </strong>
+                            <em>우선 고객 중심으로 상권을 해석 
+                                국어사전에서 상권은 어떤 곳을 중심으로 상업이 활발하게 이뤄지는 지역이라고 풀이 
+                                상권을 특정 판매점의 제품과 서비스를 구매할 의향이 있는 고객들이 생활하는 지리적 범위라고 정의
+                            </em>
+                            <p>(시간대 별 유동인구 파악, 구매예상층 분석하여 최종적으로 입점 확정)</p>
                         </div>
                     </div>
                 </div>
-                <div class="box-wrap clearfix">
+                <div class="well-being clearfix">
                     <div class="box-wrap-regular">
-                        <h4 class="box-wrap-tit"><strong>100%</strong><em>자연치즈</em>를 사용합니다.</h4>
+                        <h4 class="box-wrap-tit"><strong>02</strong><span>경쟁력 있는</span><em>웰빙도우와 맛으로 승부</em></h4>
                         <div class="box-wrap-description">
-                            <strong>토핑치즈 - 자연치즈100%</strong>
-                            <em>주문 즉시 도우를 손으로 두드리고 펴서</em>
-                            <p>신선한 재료를 토핑하여 맛있게 제공합니다.</p>
-                            <p>그래서 맛있는 피자입니다.</p>
+                            <strong>우리쌀과 보리, 조, 밀, 검은깨로 만든</strong>
+                            <em>웰빙도우피자 끈임없는 신제품 연구개발로 매출 증대</em>
                         </div>
                     </div>
-                    <div class="empty"></div>
                 </div>
-                <div class="box-wrap clearfix">
+                <div class="tactics clearfix">
                     <div class="box-wrap-regular">
-                        <h4 class="box-wrap-tit"><strong>엄선된 토핑과 재료만을 사용하여</strong><br>안심하고 드실 수 있습니다.</h4>
+                        <h4 class="box-wrap-tit"><strong>03</strong><em>WIN-WIN<span>전략</span></em></h4>
                         <div class="box-wrap-description">
-                            <strong>오구쌀피자는 원산지 표시제를 준수합니다.</strong>
-                            <em>또한 '맛없는 피자는 만들지도, 고객에게 제공하지도 않는다.'는</em>
-                            <p>신념 아래 피자를 만듭니다.</p>
-                            <p>그래서 정직한 피자입니다</p>
+                            <strong>점주의 이익이 곧 본사의 이익</strong>
+                            <em>신념아래 최대의 이익</em>
+                            <p>중간유통 마진의 거품을 제거한 원자재 공급</p>
+                            <p>본사의 지속적인 체계적 관리</p>
                         </div>
                     </div>
+                </div>
+                <div class="resource clearfix">
+                    <div class="box-wrap-regular">
+                        <h4 class="box-wrap-tit"><strong>04</strong><em>전국 유통망<em> 확보</h4>
+                        <div class="box-wrap-description">
+                            <strong>자체물류센터 보유로 전국 배송 가능한 시스템 구축</strong>
+                            <em>고객에게 품질 높은 전달 기능</em>
+                            <p>고품질 가성비 제품 개발 유통</p>
+                            <p>고객을 생각하는 신속한 유통</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-wrap">
+                    <figure class="infographic">
+                        <img src="" alt="전략적인 오구쌀만의 상권분석! 오구오구!">
+                        <p>가치·희소성·모방불가·조직화</p>
+                        <p>고객 분포 파악</p>
+                        <p>일간·주간·계절별 매출 특성도 파악해야</p>
+                        <p>매출 항목</p>
+                        <p>시간대 별 상권 파악</p>
+                    </figure>
+                    <figure class="wellbeing-infographic">
+                        <div class="circle">
+                            <p class="big-circle">웰빙이란</p>
+                            <p class="common-circle">행복</p> 
+                            <p class="common-circle">안녕</p> 
+                            <p class="common-circle">복지</p> 
+                            <p class="common-circle">복리</p>
+                        </div>
+                        <h5>바쁜 일상과 인스턴트 식품, 스트레스에서 건강한 육체와 정신을 추구하는 라이프 스타일</h5>
+                        <p>자연친화적이고 건강에 유익하며 먹어서 행복해 지는 식품</p>
+                    </figure>
                 </div>
             </div>
         </article>
-        <article class="regular identity">
-            <h3 class="sub-tit">아이덴티티</h3>
-            <p class="sub-description">오구쌀만의 차별성! 막강한 개성!</p>
-            <div class="big-box-wrap">
-                <figure class="identity-common clearfix">
-                    <h4 class="identity-tit">BRAND LOGO</h4>
-                    <img src="/img/sub-img/identity-logo.jpg" alt="막강한 유기농 브랜드 오구쌀피자!">
-                </figure>
-                <figure class="identity-common clearfix">
-                    <h4 class="identity-tit">COLOR PALLET</h4>
-                    <div class="color clearfix">
-                        <p>MAIN COLOR</p>
-                        <p>SUB COLOR</p>
-                        <p>POINT COLOR</p>
+        <article class="regular best">
+            <h3 class="sub-tit">차별화된 오구쌀피자</h3>
+            <p class="sub-description">소비자들을 생각하는 오구오구의 특별한 마음</p>
+            <div class="best-introduction-wrap">
+                <div class="best-circle">
+                    <div class="best-sub-circle">
+                        <div class="circle-content"></div>
                     </div>
-                </figure>
-                <p class="identity-description">59피자라는 명칭은 가장 기본적이고 저렴한 콤비네이션 피자가 5,900원인 것에서 유래하였습니다.<br> 
-                    광고 카피인 '맛있어서 오구, 생각나서 오구' 역시 여기에서 나왔습니다.</p>
-            </div>
-        </article>
-        <article class="regular interior">
-            <h3 class="sub-tit">인테리어</h3>
-            <p class="sub-description">오구쌀만의 특별한 장소!</p>
-            <div class="big-box-wrap">
-                <figure class="interior-wrap">
-                    <img src="/img/sub-img/interior.png" alt="오구쌀만의 특별한 장소!">
-                    <div class="interior-description">
-                        <strong>2006년 처음 시작된 59쌀피자 프랜차이즈가 2011년 현재 오구피자 전국 가맹점 500호점을 돌파했습니다.<br>  
-                            오구피자만의 독특한 쌀과 검은깨,  기타 웰빙 재료로 기름기를 없애고 담백한 맛과 영향을 고려하여 남녀노소 누구나<br> 
-                            즐길 수 있는 저렴한 가격의 쌀피자로 건강한 맛의 이미지를 보여주고 있습니다.</strong>
-                        <em>현대인의 감각에 맞춘 세련된 인테리어와 넓은 실내 공간으로 많은 사람들이 매장에 방문해 음식을 즐길 수 있도록  되어있습니다.<br>
-                            20여가지 종류의 피자와 스파게티, 오구치킨이 주요 판매 제품입니다.</em>
-                        <p>저가형 피자 가게지만 비교적 세련된 인테리어였습니다. 로고에 사용된 색상이 인테리어에 적절히 조합되어 안정적인 분위기입니다.<br>
-                            ‘59'라는 것을 맛있어서 오구, 생각나서 오구라는 문구를 통해 센스있게 표현해 재미를 더 했습니다.<br>
-                            또 로고 안에 쌀을 강조하는 이미지를 넣어 재미도 더 하고 오구피자만의 쌀로 만든다라는 특징을 잘 살린 것 같습니다.</p>
-                    </div>
-                </figure>
+                </div>
+                <p class="best-detail">친환경 유기농 재료를 사용하며<br>항상 소비자의 건강을 중요하게 생각<br><strong>단순한 인스턴트 식품과는 차별화</strong><br>맛과 건강을 둘다 챙긴 막강함</p>
+                <p class="best-detail">저비용 고품질 브랜드 추구<br>모든 소비자들을 생각하는 따뜻한 가격<br>경제적인 상황을 고려한 <strong>오구오구의 특별한 마음</strong></p>
+                <p class="best-detail"></p>
+                <p class="best-detail"></p>
             </div>
         </article>
     </div>
