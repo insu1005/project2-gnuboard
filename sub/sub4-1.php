@@ -48,7 +48,7 @@ include_once(G5_PATH.'/head-sub-4.php');
                 </div>
                 <div class="resource unite clearfix">
                     <div class="box-wrap-regular">
-                        <h4 class="box-wrap-tit"><strong>04</strong><em>전국 유통망<em><span>확보</span></h4>
+                        <h4 class="box-wrap-tit"><strong>04</strong><em>전국 유통망</em><span>확보</span></h4>
                         <div class="box-wrap-description">
                             <strong>자체물류센터 보유로 전국 배송 가능한 시스템 구축</strong>
                             <em>고객에게 품질 높은 전달 기능</em>
@@ -57,9 +57,8 @@ include_once(G5_PATH.'/head-sub-4.php');
                         </div>
                     </div>
                 </div>
-                <div class="info-wrap">
+                <div class="info-wrap clearfix">
                     <figure class="infographic">
-                        <img src="" alt="전략적인 오구쌀만의 상권분석! 오구오구!">
                         <p>가치·희소성·모방불가·조직화</p>
                         <p>고객 분포 파악</p>
                         <p>일간·주간·계절별 매출 특성도 파악해야</p>
@@ -74,7 +73,7 @@ include_once(G5_PATH.'/head-sub-4.php');
                             <p class="common-circle">복지</p> 
                             <p class="common-circle">복리</p>
                         </div>
-                        <h5>바쁜 일상과 인스턴트 식품, 스트레스에서 건강한 육체와 정신을 추구하는 라이프 스타일</h5>
+                        <h5>바쁜 일상과 인스턴트 식품, <br> 스트레스에서 건강한 육체와 정신을 추구하는 라이프 스타일</h5>
                         <p>자연친화적이고 건강에 유익하며 먹어서 행복해 지는 식품</p>
                     </figure>
                 </div>

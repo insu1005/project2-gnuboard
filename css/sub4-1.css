@@ -48,6 +48,44 @@
     box-sizing: border-box;
     margin-bottom: 170px; padding-top: 142px;
 }
+.info-wrap { padding: 100px 170px; }
+.infographic{ 
+    float: left;
+    width: 450px;
+    position: relative;
+}
+.infographic::before{content: "";
+    display: block;
+    width: 300px; height: 300px;
+    border-radius: 100%;
+    background-image: url(/img/sub-img/marketing.jpg); background-position: center center; background-size: contain;
+}
+.infographic p { 
+    padding: 0 10px;
+    border-radius: 100px;
+    font-weight: 800; color: #fff; line-height: 40px;
+    background-color: rgb(20, 153, 230);
+    position: absolute; left: 0; top: 0; z-index: 10;
+}
+.infographic p:nth-child(1) { left: -160px;}
+.infographic p:nth-child(2) { left: 160px; top: -60px;}
+.infographic p:nth-child(3) { left:-160px; top: 305px;}
+.infographic p:nth-child(4) { left: 340px; top: 100px;}
+.infographic p:nth-child(5) { left: 160px; top: 320px;}
+.wellbeing-infographic{ float: left;}
+.big-circle { 
+    margin: 0 auto;
+    width: 150px; height: 150px;
+    border-radius: 100%;
+    background-color: rgb(238, 97, 31);
+    font-weight: 800; color: #fff; line-height: 150px; text-align: center;
+}
+.common-circle {
+    width: 80px; height: 80px;
+    border: 3px solid rgb(238, 97, 31);
+    background-color: #fff;
+    color: rgb(238, 97, 31);
+}
 /* sub4-1 -e */
 /* sub4-2 -s */
 /* sub4-2 -e */
