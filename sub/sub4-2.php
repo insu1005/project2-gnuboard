@@ -9,81 +9,77 @@ include_once(G5_PATH.'/head-sub-4.php');
 <section class="sub-common sub4-1">
     <div class="inner">
         <article class="regular brand-sub">
-            <h2 class="sub-tit">브랜드 소개</h2>
-            <p class="sub-description">항상 여러분과 함께하는 최고의 브랜드!</p>
-            <div class="big-box-wrap">
+            <h2 class="sub-tit">성공 스토리</h2>
+            <p class="sub-description">오구쌀만의 KNOW-HOW 지금 바로 공개합니다!</p>
+            <div class="marketing-tatics-wrap">
                 <div class="box-wrap clearfix">
                     <div class="box-wrap-regular">
-                        <h4 class="box-wrap-tit">우리쌀과 보리, 조, 밀,<br> 검은깨로 만든 <strong>웰빙도우피자입니다.</strong></h4>
+                        <h4 class="box-wrap-tit">활발한 마켓팅</h4>
                         <div class="box-wrap-description">
-                            <strong>토핑만큼 도우의 맛이 중요합니다.</strong>
-                            <em>오구쌀피자는 쫀득하고 고소한 쌀도우피자입니다.</em>
-                            <p>오구쌀피자는 타공팬을 사용한 피자로 기름기가 없고 담백합니다.</p>
-                            <p>그래서 건강한 피자입니다.</p>
+                            <strong>드라마 제작지원, 직업군, PPL</strong>
+                            <em>오프라인 행사</em>
+                            <p>라디오 송출 / CM송 광고</p>
+                            <p>웹 / SNS / 유튜브</p>
+                            <p>할인 및 홍보 프로모션</p>
+                            <p>영상 기획 브랜딩 마케팅</p>
                         </div>
-                    </div>
-                </div>
-                <div class="box-wrap clearfix">
-                    <div class="box-wrap-regular">
-                        <h4 class="box-wrap-tit"><strong>100%</strong><em>자연치즈</em>를 사용합니다.</h4>
-                        <div class="box-wrap-description">
-                            <strong>토핑치즈 - 자연치즈100%</strong>
-                            <em>주문 즉시 도우를 손으로 두드리고 펴서</em>
-                            <p>신선한 재료를 토핑하여 맛있게 제공합니다.</p>
-                            <p>그래서 맛있는 피자입니다.</p>
-                        </div>
-                    </div>
-                    <div class="empty"></div>
-                </div>
-                <div class="box-wrap clearfix">
-                    <div class="box-wrap-regular">
-                        <h4 class="box-wrap-tit"><strong>엄선된 토핑과 재료만을 사용하여</strong><br>안심하고 드실 수 있습니다.</h4>
-                        <div class="box-wrap-description">
-                            <strong>오구쌀피자는 원산지 표시제를 준수합니다.</strong>
-                            <em>또한 '맛없는 피자는 만들지도, 고객에게 제공하지도 않는다.'는</em>
-                            <p>신념 아래 피자를 만듭니다.</p>
-                            <p>그래서 정직한 피자입니다</p>
+                        <div class="drama-box">
+                            <figure class="k-drama snack">
+                                <img src="" alt="오구쌀의 아낌없는 드라마 제작지원! 사랑의 꽈배기 오구쌀피자가 함께합니다!">
+                                <h5>사랑의 꽈배기</h5>
+                                <p>거짓말 때문에 사랑과 인생이 총체적으로 꼬여버린 막장가족들의 코믹 멜로 휴먼가족 이야기</p>
+                            </figure>
+                            <figure class="k-drama secret">
+                                <img src="" alt="오구쌀의 아낌없는 드라마 제작지원! 여자의 비밀 오구쌀피자가 함께합니다!">
+                                <h5>여자의 비밀</h5>
+                                <p>거짓말 때문에 사랑과 인생이 총체적으로 꼬여버린 막장가족들의 코믹 멜로 휴먼가족 이야기</p>
+                            </figure>
+                            <p class="drama-detail">오구오구! 여러분들과 함께하는 안방극장 오구쌀이 직접지원합니다. 많이 사랑해주세요. 항상 오구쌀피자는 여러분들과 함께하고 싶습니다.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
-        <article class="regular identity">
-            <h3 class="sub-tit">아이덴티티</h3>
-            <p class="sub-description">오구쌀만의 차별성! 막강한 개성!</p>
+        <article class="regular brand-marketing">
+            <h3 class="sub-tit">브랜드 홍보 컨텐츠 마케팅</h3>
+            <p class="sub-description">오구쌀만의 오구오구 브랜딩 홍보입니다</p>
             <div class="big-box-wrap">
-                <figure class="identity-common clearfix">
-                    <h4 class="identity-tit">BRAND LOGO</h4>
-                    <img src="/img/sub-img/identity-logo.jpg" alt="막강한 유기농 브랜드 오구쌀피자!">
+                <figure class="utube-branding clearfix">
+                    <!-- <div class="유튜브 여기에 삽입"></div> -->
+                    <h4 class="utube-tit">유튜브 브랜딩 영상</h4>
+                    <p class="utube-detail">유튜브 여러분 유하! 오구쌀피자가 유튜브에서도 여러분과 함께합니다</p>
                 </figure>
-                <figure class="identity-common clearfix">
-                    <h4 class="identity-tit">COLOR PALLET</h4>
-                    <div class="color clearfix">
-                        <p>MAIN COLOR</p>
-                        <p>SUB COLOR</p>
-                        <p>POINT COLOR</p>
-                    </div>
+                <figure class="utube-branding clearfix">
+                    <!-- <div class="유튜브 여기에 삽입"></div> -->
+                    <h4 class="utube-tit">유튜브 컨텐츠</h4>
+                    <p class="utube-detail">많은 유튜버분들이 저희 오구쌀 피자와 함께합니다!</p>
                 </figure>
-                <p class="identity-description">59피자라는 명칭은 가장 기본적이고 저렴한 콤비네이션 피자가 5,900원인 것에서 유래하였습니다.<br> 
-                    광고 카피인 '맛있어서 오구, 생각나서 오구' 역시 여기에서 나왔습니다.</p>
             </div>
         </article>
-        <article class="regular interior">
-            <h3 class="sub-tit">인테리어</h3>
-            <p class="sub-description">오구쌀만의 특별한 장소!</p>
+        <article class="regular in-out-marketing">
+            <h3 class="sub-tit">Indoor 오구오구! Outdoor 오구오구!</h3>
+            <p class="sub-description">언제어디서나 함께하는 오구쌀피자의 ALL-ROUND 마켓팅!</p>
             <div class="big-box-wrap">
-                <figure class="interior-wrap">
-                    <img src="/img/sub-img/interior.png" alt="오구쌀만의 특별한 장소!">
-                    <div class="interior-description">
-                        <strong>2006년 처음 시작된 59쌀피자 프랜차이즈가 2011년 현재 오구피자 전국 가맹점 500호점을 돌파했습니다.<br>  
-                            오구피자만의 독특한 쌀과 검은깨,  기타 웰빙 재료로 기름기를 없애고 담백한 맛과 영향을 고려하여 남녀노소 누구나<br> 
-                            즐길 수 있는 저렴한 가격의 쌀피자로 건강한 맛의 이미지를 보여주고 있습니다.</strong>
-                        <em>현대인의 감각에 맞춘 세련된 인테리어와 넓은 실내 공간으로 많은 사람들이 매장에 방문해 음식을 즐길 수 있도록  되어있습니다.<br>
-                            20여가지 종류의 피자와 스파게티, 오구치킨이 주요 판매 제품입니다.</em>
-                        <p>저가형 피자 가게지만 비교적 세련된 인테리어였습니다. 로고에 사용된 색상이 인테리어에 적절히 조합되어 안정적인 분위기입니다.<br>
-                            ‘59'라는 것을 맛있어서 오구, 생각나서 오구라는 문구를 통해 센스있게 표현해 재미를 더 했습니다.<br>
-                            또 로고 안에 쌀을 강조하는 이미지를 넣어 재미도 더 하고 오구피자만의 쌀로 만든다라는 특징을 잘 살린 것 같습니다.</p>
+                <figure class="off-line-wrap">
+                    <img src="/img/sub-img/interior.png" alt="오프라인에서 만나요! 오구쌀과 함께하는 오프라인 타임!">
+                    <h4>오프라인 마켓팅</h4>
+                    <div class="off-line-description">
+                        <p>여러분을 만나보고 같이 시간을 보내는 오구쌀입니다. 항상 열린마음으로 여러분에게 가고 싶습니다.</p>
+                        <p>때로는 친구같은 때로는 가족같은 때로는 애인같은 여러분에게 가까운 오구쌀이 되고 싶습니다.</p>
+                        <p>언제 어디서든 참여 가능한 오구쌀만의 혜택! 지금 같이 함께해요! 오구오구! 여러분!</p>
                     </div>
+                </figure>
+                <figure class="radio-wrap">
+                    <img src="" alt="오구오구!! 지금 당장 청쥐해!! 오구쌀이 함께해요!">
+                    <h4>라디오 광고</h4>
+                    <div class="radio-wrap-description">
+                        <p>귀로 쏙 오구오구!</p>
+                        <p>언제어디서 오구오구!</p>
+                        <p>즐거운 오구오구!</p>
+                    </div>
+                </figure>
+                <figure class="online-wrap">
+                    <img src="online-box" alt="온라인에서도 찾아볼 수 있어요! 오구오구 모바일, pc 인터넷 검색!! 바로지금!">
                 </figure>
             </div>
         </article>

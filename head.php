@@ -61,7 +61,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     <a href="/sub/sub4-1.php">창업</a>
                     <ul class="depth2">
                         <li><a href="/sub/sub4-1.php">브랜드 경쟁력</a></li>
-                        <li><a href="#">성공 스토리</a></li>
+                        <li><a href="/sub/sub4-2.php">성공 스토리</a></li>
                         <li><a href="#">창업 및 비용</a></li>
                         <li><a href="#">가맹문의</a></li>
                     </ul>
