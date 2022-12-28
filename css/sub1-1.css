@@ -51,15 +51,15 @@
 .box-wrap-tit strong { font-weight: 800; color:#e02d3c}
 .box-wrap-description strong{ 
     display: block;    
-    font-weight: 400; font-size: 24px; line-height: 28px;
+    font-weight: 400; font-size: 16px; line-height: 28px;
 }
 .box-wrap-description em{ 
     display: block;
-    font-size: 24px; line-height: 28px;
+    font-size: 16px; line-height: 28px;
 }
 .box-wrap-description p{ 
     display: block;
-    font-size: 24px; line-height: 28px;
+    font-size: 16px; line-height: 28px;
 }
 .box-wrap-description p:nth-of-type(2){ color: #e02d3c;}
 /* brand -e */
@@ -78,7 +78,7 @@
     float: left;
     margin-right: 70px;
     text-align: center;
-    font-size: 24px; line-height: 28px; color: #555;
+    font-size: 16px; line-height: 28px; color: #555;
 }
 .identity-common p::before {content:"";
     display: block;
@@ -93,7 +93,7 @@
     background-color: #edbe16;
 }
 .identity-description{
-    font-size: 24px; line-height: 28px; color: #555;
+    font-size: 16px; line-height: 28px; color: #555;
 }
 /* identity -e */
 
@@ -106,16 +106,16 @@
 .interior-description strong { 
     display: block;
     margin-bottom: 34px;
-    font-weight: 400; font-size: 24px; line-height: 34px; color: #555;
+    font-weight: 400; line-height: 34px; color: #555;
 }
 .interior-description em {
     display: block; 
     margin-bottom: 34px;
-    font-weight: 400; font-size: 24px; line-height: 34px; color: #555;
+    font-weight: 400; line-height: 34px; color: #555;
 }
 .interior-description p { 
     margin-bottom: 34px;
-    font-weight: 400; font-size: 24px; line-height: 34px; color: #555;
+    font-weight: 400; line-height: 34px; color: #555;
 }
 /* interior -e */
 /* sub1-1 -e */
@@ -148,32 +148,32 @@
 .company-description > strong{
     display: block;
     margin-bottom: 30px;
-    font-weight: 400; font-size: 24px; line-height: 28px;
+    font-weight: 400; line-height: 28px;
 }
-.company-description > strong > strong { font-size: 30px; line-height: 40px; color: #e02d3c;}
+.company-description > strong > strong { font-size: 20px; line-height: 40px; color: #111;}
 .company-description em {
     display: block;
     margin-bottom: 30px;
-    font-size: 24px; line-height: 28px;
+    line-height: 28px;
 }
 .company-description p {
     display: block;
-    font-size: 24px; line-height: 28px;
+    line-height: 28px;
 }
 .company-wrap img {margin-bottom: 50px;}
 .company-detail { color: #777; }
 .company-detail strong { 
     display: block;
     margin-bottom: 30px;
-    font-weight: 700; font-size: 30px; line-height: 34px; color: #111;
+    font-weight: 700; font-size: 24px; line-height: 34px; color: #111;
 }
 .company-detail em { 
     display: block;
-    font-weight: 400; font-size: 24px; line-height: 28px; color: #333;
+    font-weight: 400; line-height: 28px; color: #333;
     margin-bottom: 30px;
 }
 .company-detail p { 
-    font-weight: 400; font-size: 24px; line-height: 28px;
+    font-weight: 400; line-height: 28px;
 }
 /* sub1-2 -e */
 
@@ -195,10 +195,10 @@
 }
 .location-detail p { 
     float: left;
-    font-weight: 800; font-size: 24px; line-height: 28px;
+    font-weight: 800; line-height: 28px;
     position: relative;
 }
-.location-detail p strong { font-weight: 800; font-size: 28px; line-height: 32px;}
+.location-detail p strong { font-weight: 800; font-size: 20px; line-height: 32px;}
 .location-detail p:first-child { margin-right: 90px;}
 .location-detail p::before { content: "";
     width: 40px; height: 40px;
@@ -210,7 +210,7 @@
 .subway-tit { 
     float: left;
     margin-right: 50px;
-    font-weight: 800; font-size: 24px; line-height: 28px;
+    font-weight: 800; line-height: 28px;
     position: relative; 
 }
 .subway-tit::before { content: "";
@@ -228,7 +228,7 @@
 .bus-tit { 
     float: left;
     margin-right: 70px;
-    font-weight: 800; font-size: 24px; line-height: 28px; 
+    font-weight: 800; line-height: 28px; 
     position: relative; 
 }
 .bus-tit::before { content: "";

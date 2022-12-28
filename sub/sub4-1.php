@@ -73,7 +73,7 @@ include_once(G5_PATH.'/head-sub-4.php');
                             <p class="common-circle">복지</p> 
                             <p class="common-circle">복리</p>
                         </div>
-                        <h5>바쁜 일상과 인스턴트 식품, <br> 스트레스에서 건강한 육체와 정신을 추구하는 라이프 스타일</h5>
+                        <h5>바쁜 일상과 인스턴트 식품, <br> 스트레스에서 건강한 육체와 정신을 <br> 추구하는 라이프 스타일</h5>
                         <p>자연친화적이고 건강에 유익하며 먹어서 행복해 지는 식품</p>
                     </figure>
                 </div>
