@@ -14,27 +14,29 @@ include_once(G5_PATH.'/head-sub-4.php');
             <div class="marketing-tatics-wrap">
                 <div class="box-wrap clearfix">
                     <div class="box-wrap-regular">
-                        <h4 class="box-wrap-tit">활발한 마켓팅</h4>
-                        <div class="box-wrap-description">
-                            <strong>드라마 제작지원, 직업군, PPL</strong>
-                            <em>오프라인 행사</em>
-                            <p>라디오 송출 / CM송 광고</p>
-                            <p>웹 / SNS / 유튜브</p>
-                            <p>할인 및 홍보 프로모션</p>
-                            <p>영상 기획 브랜딩 마케팅</p>
+                        <div class="marketing-box clearfix">
+                            <h4 class="box-wrap-tit">활발한 마켓팅</h4>
+                            <div class="box-wrap-description">
+                                <strong class="marketing-detail">드라마 제작지원, 직업군, PPL</strong>
+                                <em class="marketing-detail">오프라인 행사</em>
+                                <p class="marketing-detail">라디오 송출 / CM송 광고</p>
+                                <p class="marketing-detail">웹 / SNS / 유튜브</p>
+                                <p class="marketing-detail">할인 및 홍보 프로모션</p>
+                                <p class="marketing-detail">영상 기획 브랜딩 마케팅</p>
+                            </div>
                         </div>
                         <div class="drama-box">
+                            <h4 class="drama-detail">오구오구! 여러분들과 함께하는 안방극장 오구쌀이 직접지원합니다. 많이 사랑해주세요. 항상 오구쌀피자는 여러분들과 함께하고 싶습니다.</h4>
                             <figure class="k-drama snack">
-                                <img src="" alt="오구쌀의 아낌없는 드라마 제작지원! 사랑의 꽈배기 오구쌀피자가 함께합니다!">
+                                <img src="/img/sub-img/k-drama-secret.png" alt="오구쌀의 아낌없는 드라마 제작지원! 사랑의 꽈배기 오구쌀피자가 함께합니다!">
                                 <h5>사랑의 꽈배기</h5>
                                 <p>거짓말 때문에 사랑과 인생이 총체적으로 꼬여버린 막장가족들의 코믹 멜로 휴먼가족 이야기</p>
                             </figure>
                             <figure class="k-drama secret">
-                                <img src="" alt="오구쌀의 아낌없는 드라마 제작지원! 여자의 비밀 오구쌀피자가 함께합니다!">
+                                <img src="/img/sub-img/k-drama-snack.png" alt="오구쌀의 아낌없는 드라마 제작지원! 여자의 비밀 오구쌀피자가 함께합니다!">
                                 <h5>여자의 비밀</h5>
                                 <p>거짓말 때문에 사랑과 인생이 총체적으로 꼬여버린 막장가족들의 코믹 멜로 휴먼가족 이야기</p>
                             </figure>
-                            <p class="drama-detail">오구오구! 여러분들과 함께하는 안방극장 오구쌀이 직접지원합니다. 많이 사랑해주세요. 항상 오구쌀피자는 여러분들과 함께하고 싶습니다.</p>
                         </div>
                     </div>
                 </div>

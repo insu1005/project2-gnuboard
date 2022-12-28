@@ -156,6 +156,33 @@
 .best-detail:nth-of-type(4)::after { left: -104px; top: 20px;}
 /* sub4-1 -e */
 /* sub4-2 -s */
+.marketing-box { 
+    padding: 0 400px; 
+    margin-bottom: 50px;
+}
+.marketing-tatics-wrap .box-wrap-tit { 
+    float: left;
+    margin: 65px 50px 0 0;
+    width: 200px; height: 200px;
+    border: 5px solid rgb(255, 187, 0); border-radius: 100%;
+    background-color: #c00810;
+    font-weight:800; font-size: 30px; color: #fff; line-height: 200px; text-align: center;
+}
+.marketing-tatics-wrap .box-wrap-description {
+    float: left;
+}
+.marketing-tatics-wrap .box-wrap-description .marketing-detail {
+    padding: 10px 10px; 
+    border: 5px solid #c00810; border-radius: 100px;
+    background-color: rgb(255, 123, 0);
+    font-weight: 700; text-align: center; color: #fff;
+}
+.marketing-tatics-wrap .box-wrap-description .marketing-detail:nth-child(1) {transform: translateX(-120px);}
+.marketing-tatics-wrap .box-wrap-description .marketing-detail:nth-child(2) {transform: translateX(-60px);}
+.marketing-tatics-wrap .box-wrap-description .marketing-detail:nth-child(3) {transform: translateX(-30px);}
+.marketing-tatics-wrap .box-wrap-description .marketing-detail:nth-child(4) {transform: translateX(-30px);}
+.marketing-tatics-wrap .box-wrap-description .marketing-detail:nth-child(5) {transform: translateX(-60px);}
+.marketing-tatics-wrap .box-wrap-description .marketing-detail:nth-child(6) {transform: translateX(-120px);}
 /* sub4-2 -e */
 /* sub4-3 -s */
 /* sub4-3 -e */
