@@ -8,7 +8,7 @@ include_once(G5_PATH.'/head-sub-4.php');
 ?>
 <section class="sub-common sub4-1">
     <div class="inner">
-        <article class="regular brand-sub">
+        <article class="regular brand-story">
             <h2 class="sub-tit">성공 스토리</h2>
             <p class="sub-description">오구쌀만의 KNOW-HOW 지금 바로 공개합니다!</p>
             <div class="marketing-tatics-wrap">

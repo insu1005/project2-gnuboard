@@ -25,9 +25,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 <li class="depth1">
                     <a href="#">브랜드</a>
                     <ul class="depth2">
-                        <li><a href="#">브랜드 소개</a></li>
-                        <li><a href="#">회사소개</a></li>
-                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="/sub/sub1-1.php">브랜드 소개</a></li>
+                        <li><a href="/sub/sub1-2.php">회사소개</a></li>
+                        <li><a href="/sub/sub1-3.php">오시는 길</a></li>
                     </ul>
                 </li>
                 <li class="depth1">
@@ -51,9 +51,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 <li class="depth1">
                     <a href="#">창업</a>
                     <ul class="depth2">
-                        <li><a href="#">브랜드 경쟁력</a></li>
+                        <li><a href="/sub/sub4-1.php">브랜드 경쟁력</a></li>
                         <li><a href="/sub/sub4-2.php">성공 스토리</a></li>
-                        <li><a href="#">창업 및 비용</a></li>
+                        <li><a href="/sub/sub4-3.php">창업 및 비용</a></li>
                         <li><a href="#">가맹문의</a></li>
                     </ul>
                 </li>
