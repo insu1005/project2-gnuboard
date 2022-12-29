@@ -2,7 +2,7 @@
 include_once('./_common.php');
 
 $g5['title'] = '전체검색 결과';
-include_once('./_head.php');
+include_once('./_head-search.php');
 
 $search_table = Array();
 $table_index = 0;
@@ -32,24 +32,24 @@ if ($stx) {
     $result = sql_query($sql);
     for ($i=0; $row=sql_fetch_array($result); $i++)
     {
-        if ($is_admin != 'super')
-        {
-            // 그룹접근 사용에 대한 검색 차단
-            $sql2 = " select gr_use_access, gr_admin from {$g5['group_table']} where gr_id = '{$row['gr_id']}' ";
-            $row2 = sql_fetch($sql2);
-            // 그룹접근을 사용한다면
-            if ($row2['gr_use_access']) {
-                // 그룹관리자가 있으며 현재 회원이 그룹관리자라면 통과
-                if ($row2['gr_admin'] && $row2['gr_admin'] == $member['mb_id']) {
-                    ;
-                } else {
-                    $sql3 = " select count(*) as cnt from {$g5['group_member_table']} where gr_id = '{$row['gr_id']}' and mb_id = '{$member['mb_id']}' and mb_id <> '' ";
-                    $row3 = sql_fetch($sql3);
-                    if (!$row3['cnt'])
-                        continue;
-                }
-            }
-        }
+        // if ($is_admin != 'super')
+        // {
+        //     // 그룹접근 사용에 대한 검색 차단
+        //     $sql2 = " select gr_use_access, gr_admin from {$g5['group_table']} where gr_id = '{$row['gr_id']}' ";
+        //     $row2 = sql_fetch($sql2);
+        //     // 그룹접근을 사용한다면
+        //     if ($row2['gr_use_access']) {
+        //         // 그룹관리자가 있으며 현재 회원이 그룹관리자라면 통과
+        //         if ($row2['gr_admin'] && $row2['gr_admin'] == $member['mb_id']) {
+        //             ;
+        //         } else {
+        //             $sql3 = " select count(*) as cnt from {$g5['group_member_table']} where gr_id = '{$row['gr_id']}' and mb_id = '{$member['mb_id']}' and mb_id <> '' ";
+        //             $row3 = sql_fetch($sql3);
+        //             if (!$row3['cnt'])
+        //                 continue;
+        //         }
+        //     }
+        // }
         $g5_search['tables'][] = $row['bo_table'];
         $g5_search['read_level'][] = $row['bo_read_level'];
     }
@@ -236,4 +236,4 @@ if (!$sop) $sop = 'or';
 
 include_once($search_skin_path.'/search.skin.php');
 
-include_once('./_tail.php');
+include_once('./_tail-member.php');

@@ -27,208 +27,209 @@ if ($is_admin && ($prev_href || $next_href)) {
 ?>
 
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
-
-<div class="wrap">
-    <h1 class="title_type1"><span>유</span>지보수 요청</h1>
-    <div class="cont-type1 cont_request">
-        <div class="row mt20">
-            <div class="div_left btn_left left">
-                <?php echo $nav_buttons; ?>
+<div class="inner">
+    <div class="wrap">
+        <h1 class="title_type1"><span>유</span>지보수 요청</h1>
+        <div class="cont-type1 cont_request">
+            <div class="row mt20">
+                <div class="div_left btn_left left">
+                    <?php echo $nav_buttons; ?>
+                </div>
+                <div class="div_right right">
+                    <?php if ($write_href) { ?><a href="<?php echo $write_href ?>" class="btn_red btn_lg">유지보수 신청하기</a><?php } ?>
+                </div>
             </div>
-            <div class="div_right right">
-                <?php if ($write_href) { ?><a href="<?php echo $write_href ?>" class="btn_red btn_lg">유지보수 신청하기</a><?php } ?>
-            </div>
-        </div>
-        <table>
-            <colgroup>
-                <col style="width: 20%"/>
-                <col style="width: 80%"/>
-            </colgroup>
-            </thead>
-            <tbody>
-            <?php if ($category_name) { // 분류가 있을 경우?>
+            <table>
+                <colgroup>
+                    <col style="width: 20%"/>
+                    <col style="width: 80%"/>
+                </colgroup>
+                </thead>
+                <tbody>
+                <?php if ($category_name) { // 분류가 있을 경우?>
+                    <tr>
+                        <th>분류</th>
+                        <td class="border_r0"><?php echo $view['ca_name'];?></td>
+                    </tr>
+                <?php } ?>
                 <tr>
-                    <th>분류</th>
-                    <td class="border_r0"><?php echo $view['ca_name'];?></td>
+                    <th>이름</th>
+                    <td class="border_r0">
+                        <?php echo $view['name'] ?> (<?php echo $view['wr_1'] ?>)
+                    </td>
                 </tr>
-            <?php } ?>
-            <tr>
-                <th>이름</th>
-                <td class="border_r0">
-                    <?php echo $view['name'] ?> (<?php echo $view['wr_1'] ?>)
-                </td>
-            </tr>
 
-            <tr>
-                <th>연락처</th>
-                <td class="border_r0">
-                    <?php echo $view['wr_2']; ?> (<?php echo $view['wr_email'] ?>)
-                </td>
-            </tr>
+                <tr>
+                    <th>연락처</th>
+                    <td class="border_r0">
+                        <?php echo $view['wr_2']; ?> (<?php echo $view['wr_email'] ?>)
+                    </td>
+                </tr>
 
-            <tr>
-                <th>요청일</th>
-                <td class="border_r0">
-                    <?php echo date("y-m-d H:i", strtotime($view['wr_datetime'])) ?>
-                </td>
-            </tr>
-            <tr>
-                <th>기타정보</th>
-                <td class="border_r0">
-                    <?php if ($is_ip_view) { echo "&nbsp;($ip)"; } ?>
-                    <span class="w480">조회<?php echo number_format($view['wr_hit']) ?>회</span>
-                    <span class="w480">댓글<?php echo number_format($view['wr_comment']) ?>건</span>
-                </td>
-            </tr>
+                <tr>
+                    <th>요청일</th>
+                    <td class="border_r0">
+                        <?php echo date("y-m-d H:i", strtotime($view['wr_datetime'])) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>기타정보</th>
+                    <td class="border_r0">
+                        <?php if ($is_ip_view) { echo "&nbsp;($ip)"; } ?>
+                        <span class="w480">조회<?php echo number_format($view['wr_hit']) ?>회</span>
+                        <span class="w480">댓글<?php echo number_format($view['wr_comment']) ?>건</span>
+                    </td>
+                </tr>
 
-            <tr>
-                <th>진행상황</th>
-                <td class="border_r0 state">
-                    <?php $val = $requestboard->getStatVal($view['wr_3']);
-                    echo "<span class='".$val['css']."' style='width:10%; text-align:center;' >".$val['val']."</span>";
-                    ?>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-
-        <table>
-            <colgroup>
-                <col style="width: 20%"/>
-                <col style="width: 80%"/>
-            </colgroup>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="border_r0 bold td_title" colspan="2"><?php echo cut_str(get_text($view['wr_subject']), 70); // 글제목 출력 ?></td>
-            </tr>
-            <tr>
-                <td class="border_r0 td_cont" colspan="2">
-                    <div>
-                        <?php
-                        // 파일 출력
-                        $v_img_count = count($view['file']);
-                        if($v_img_count) {
-                            echo "<div id=\"bo_v_img\">\n";
-
-                            for ($i=0; $i<=count($view['file']); $i++) {
-                                if ($view['file'][$i]['view']) {
-                                    echo get_view_thumbnail($view['file'][$i]['view']);
-                                }
-                            }
-
-                            echo "</div>\n";
-                        }
+                <tr>
+                    <th>진행상황</th>
+                    <td class="border_r0 state">
+                        <?php $val = $requestboard->getStatVal($view['wr_3']);
+                        echo "<span class='".$val['css']."' style='width:10%; text-align:center;' >".$val['val']."</span>";
                         ?>
-                        <?php echo get_view_thumbnail($view['content']); ?>
-                    </div>
-                </td>
-            </tr>
-            <?php if ($view['link']) { ?>
-                <!-- 관련링크 시작 { -->
-                <tr>
-                    <th>관련링크</th>
-                    <td class="border_r0">
-                        <ul>
-                            <?php
-                            // 링크
-                            $cnt = 0;
-                            for ($i=1; $i<=count($view['link']); $i++) {
-                                if ($view['link'][$i]) {
-                                    $cnt++;
-                                    $link = cut_str($view['link'][$i], 70);
-                                    ?>
-                                    <li>
-                                        <a href="<?php echo $view['link_href'][$i] ?>" target="_blank">
-                                            <img src="<?php echo $board_skin_url ?>/img/icon_link.gif" alt="관련링크">
-                                            <strong><?php echo $link ?></strong>
-                                        </a>
-                                        <span class="bo_v_link_cnt"><?php echo $view['link_hit'][$i] ?>회 연결</span>
-                                    </li>
-                                    <?php
-                                }
-                            }
-                            ?>
-                        </ul>
                     </td>
                 </tr>
-                <!-- } 관련링크 끝 -->
-            <?php } ?>
-            <?php
-            if ($view['file']['count']) {
-                $cnt = 0;
-                for ($i=0; $i<count($view['file']); $i++) {
-                    if (isset($view['file'][$i]['source']) && $view['file'][$i]['source'] && !$view['file'][$i]['view'])
-                        $cnt++;
+                </tbody>
+            </table>
+
+            <table>
+                <colgroup>
+                    <col style="width: 20%"/>
+                    <col style="width: 80%"/>
+                </colgroup>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="border_r0 bold td_title" colspan="2"><?php echo cut_str(get_text($view['wr_subject']), 70); // 글제목 출력 ?></td>
+                </tr>
+                <tr>
+                    <td class="border_r0 td_cont" colspan="2">
+                        <div>
+                            <?php
+                            // 파일 출력
+                            $v_img_count = count($view['file']);
+                            if($v_img_count) {
+                                echo "<div id=\"bo_v_img\">\n";
+
+                                for ($i=0; $i<=count($view['file']); $i++) {
+                                    if ($view['file'][$i]['view']) {
+                                        echo get_view_thumbnail($view['file'][$i]['view']);
+                                    }
+                                }
+
+                                echo "</div>\n";
+                            }
+                            ?>
+                            <?php echo get_view_thumbnail($view['content']); ?>
+                        </div>
+                    </td>
+                </tr>
+                <?php if ($view['link']) { ?>
+                    <!-- 관련링크 시작 { -->
+                    <tr>
+                        <th>관련링크</th>
+                        <td class="border_r0">
+                            <ul>
+                                <?php
+                                // 링크
+                                $cnt = 0;
+                                for ($i=1; $i<=count($view['link']); $i++) {
+                                    if ($view['link'][$i]) {
+                                        $cnt++;
+                                        $link = cut_str($view['link'][$i], 70);
+                                        ?>
+                                        <li>
+                                            <a href="<?php echo $view['link_href'][$i] ?>" target="_blank">
+                                                <img src="<?php echo $board_skin_url ?>/img/icon_link.gif" alt="관련링크">
+                                                <strong><?php echo $link ?></strong>
+                                            </a>
+                                            <span class="bo_v_link_cnt"><?php echo $view['link_hit'][$i] ?>회 연결</span>
+                                        </li>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!-- } 관련링크 끝 -->
+                <?php } ?>
+                <?php
+                if ($view['file']['count']) {
+                    $cnt = 0;
+                    for ($i=0; $i<count($view['file']); $i++) {
+                        if (isset($view['file'][$i]['source']) && $view['file'][$i]['source'] && !$view['file'][$i]['view'])
+                            $cnt++;
+                    }
                 }
-            }
-            ?>
-            <?php if($cnt) { ?>
-                <!-- 첨부파일 시작 { -->
-                <tr>
-                    <th>첨부파일</th>
-                    <td class="border_r0">
-                        <ul>
-                            <?php
-                            // 가변 파일
-                            for ($i=0; $i<count($view['file']); $i++) {
-                                if (isset($view['file'][$i]['source']) && $view['file'][$i]['source'] && !$view['file'][$i]['view']) {
-                                    ?>
-                                    <li>
-                                        <a href="<?php echo $view['file'][$i]['href'];  ?>" class="view_file_download">
-                                            <img src="<?php echo $board_skin_url ?>/img/icon_file.gif" alt="첨부">
-                                            <strong><?php echo $view['file'][$i]['source'] ?></strong>
-                                            <?php echo $view['file'][$i]['content'] ?> (<?php echo $view['file'][$i]['size'] ?>)
-                                        </a>
-                                        <span class="bo_v_file_cnt"><?php echo $view['file'][$i]['download'] ?>회 다운로드</span>
-                                        <span>DATE : <?php echo $view['file'][$i]['datetime'] ?></span>
-                                    </li>
-                                    <?php
+                ?>
+                <?php if($cnt) { ?>
+                    <!-- 첨부파일 시작 { -->
+                    <tr>
+                        <th>첨부파일</th>
+                        <td class="border_r0">
+                            <ul>
+                                <?php
+                                // 가변 파일
+                                for ($i=0; $i<count($view['file']); $i++) {
+                                    if (isset($view['file'][$i]['source']) && $view['file'][$i]['source'] && !$view['file'][$i]['view']) {
+                                        ?>
+                                        <li>
+                                            <a href="<?php echo $view['file'][$i]['href'];  ?>" class="view_file_download">
+                                                <img src="<?php echo $board_skin_url ?>/img/icon_file.gif" alt="첨부">
+                                                <strong><?php echo $view['file'][$i]['source'] ?></strong>
+                                                <?php echo $view['file'][$i]['content'] ?> (<?php echo $view['file'][$i]['size'] ?>)
+                                            </a>
+                                            <span class="bo_v_file_cnt"><?php echo $view['file'][$i]['download'] ?>회 다운로드</span>
+                                            <span>DATE : <?php echo $view['file'][$i]['datetime'] ?></span>
+                                        </li>
+                                        <?php
+                                    }
                                 }
-                            }
-                            ?>
-                        </ul>
-                    </td>
-                </tr>
-                <!-- } 첨부파일 끝 -->
-            <?php } ?>
+                                ?>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!-- } 첨부파일 끝 -->
+                <?php } ?>
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
 
-        <?php
-        include_once(G5_SNS_PATH."/view.sns.skin.php");
+            <?php
+            include_once(G5_SNS_PATH."/view.sns.skin.php");
 
-        // 코멘트 입출력
-        include_once(G5_BBS_PATH.'/view_comment.php');
-        ?>
+            // 코멘트 입출력
+            include_once(G5_BBS_PATH.'/view_comment.php');
+            ?>
 
-        <div class="row mt20">
-            <div class="div_left left">
-                <?php if ($update_href) { ?><a href="<?php echo $update_href ?>" class="btn btn_red">수정</a><?php } ?>
-                <?php if ($delete_href) { ?><a href="<?php echo $delete_href ?>" class="btn btn_red" onclick="del(this.href); return false;">삭제</a><?php } ?>
-                <?php if ($copy_href) { ?><a href="<?php echo $copy_href ?>" class="btn btn-default" onclick="board_move(this.href); return false;">복사</a><?php } ?>
-                <?php if ($move_href) { ?><a href="<?php echo $move_href ?>" class="btn btn-default" onclick="board_move(this.href); return false;">이동</a><?php } ?>
-                <?php if ($search_href) { ?><a href="<?php echo $search_href ?>" class="btn btn-warning white">검색</a><?php } ?>
-            </div>
-            <div class="div_right right">
-                <a href="<?php echo $list_href ?>" class="btn btn-default">목록보기</a>
+            <div class="row mt20">
+                <div class="div_left left">
+                    <?php if ($update_href) { ?><a href="<?php echo $update_href ?>" class="btn btn_red">수정</a><?php } ?>
+                    <?php if ($delete_href) { ?><a href="<?php echo $delete_href ?>" class="btn btn_red" onclick="del(this.href); return false;">삭제</a><?php } ?>
+                    <?php if ($copy_href) { ?><a href="<?php echo $copy_href ?>" class="btn btn-default" onclick="board_move(this.href); return false;">복사</a><?php } ?>
+                    <?php if ($move_href) { ?><a href="<?php echo $move_href ?>" class="btn btn-default" onclick="board_move(this.href); return false;">이동</a><?php } ?>
+                    <?php if ($search_href) { ?><a href="<?php echo $search_href ?>" class="btn btn-warning white">검색</a><?php } ?>
+                </div>
+                <div class="div_right right">
+                    <a href="<?php echo $list_href ?>" class="btn btn-default">목록보기</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
 <!-- 게시물 읽기 시작 { -->
-<div class="wrap">
-    <div class="cont-type1 cont_request">
-    <?php
-    // 코멘트 입출력
-    include_once(G5_BBS_PATH.'/view_comment.php');
-     ?>
+    <div class="wrap">
+        <div class="cont-type1 cont_request">
+        <?php
+        // 코멘트 입출력
+        include_once(G5_BBS_PATH.'/view_comment.php');
+        ?>
+        </div>
     </div>
-</div>
 <!-- } 게시판 읽기 끝 -->
+</div>
 
 <script>
     $('#wr_stat').change(function() {

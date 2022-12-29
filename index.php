@@ -234,7 +234,7 @@ include_once(G5_PATH.'/head.php');
                         <input type="hidden" name="sop" value="and">
                         <label for="sch_stx" class="sound_only">검색어 필수</label>
                         <input type="text" name="stx" id="sch_stx" maxlength="20" placeholder="오구오구 같이 찾아봐요!">
-                        <button type="submit" id="sch_submit" value="검색"><i class="fa fa-search market-search-submit" aria-hidden="true"></i><span class="sound_only">검색</span></button>
+                        <button type="submit" id="sch_submit" value="검색" class="market-search-submit"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">검색</span></button>
                         </form>
 
                         <script>

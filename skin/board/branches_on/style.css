@@ -31,7 +31,11 @@
 /* 읽기 버튼 */
 #bo_v a.btn_b01 {}
 #bo_v a.btn_b01:focus, #bo_v a.btn_b01:hover {}
-#bo_v a.btn_b02 {}
+#bo_v a.btn_b02 { 
+    padding: 0 5px;
+    border-radius: 50px;
+    background-color: #f00; 
+}
 #bo_v a.btn_b02:focus, #bo_v a.btn_b02:hover {}
 #bo_v a.btn_admin {} /* 관리자 전용 버튼 */
 #bo_v a.btn_admin:focus, #bo_v a.btn_admin:hover {}
@@ -41,7 +45,14 @@
 #bo_w .btn_submit {}
 #bo_w button.btn_submit {}
 #bo_w fieldset .btn_submit {}
-#bo_w .btn_cancel {}
+#bo_w .btn_cancel { 
+    padding: 0 20px;
+    height: 30px;
+    border: 1px solid #eb0b0b;
+    background: #eb0b0b;
+    line-height: 30px; color: #fff;
+    cursor: pointer;
+}
 #bo_w button.btn_cancel {}
 #bo_w .btn_cancel:focus, #bo_w .btn_cancel:hover {}
 #bo_w a.btn_frmline, #bo_w button.btn_frmline {} /* 우편번호검색버튼 등 */
@@ -80,9 +91,13 @@
 #bo_v td.empty_table {}
 
 /* 쓰기 테이블 */
-#bo_w {
-    width: 80%;
-    margin: 0 auto 170px;
+#bo_w { 
+    margin-bottom: 170px;
+    width: 100%;
+}
+#bo_w #container_title { 
+    margin-bottom: 50px;
+    font-weight: 700; font-size: 24px; line-height: 30px;
 }
 .bo_w-title {
     margin-bottom: 50px; 
@@ -97,7 +112,8 @@
 #bo_w .tbl_frm01 {}
 #bo_w .tbl_frm01 th { 
     width: 150px;
-    text-align: center;
+    background-color: #f00;
+    color: #fff; text-align: center;
 }
 #bo_w .tbl_frm01 td {}
 #bo_w .tbl_frm01 textarea, #bo_w tbl_frm01 .frm_input {}
@@ -151,7 +167,10 @@
 .cate_map_in svg {text-align:center;vertical-align: middle;}
 
 .cate_search_wrap {width:50%;float: left;}
-
+.cate_map_wrap .cate_map.cate_map_in polyline {cursor: pointer; stroke: #f00 !important;}
+.cate_map_wrap .cate_map.cate_map_in path {cursor: pointer; stroke: #f00 !important;}
+.cate_map_wrap .cate_map.cate_map_in polyline:hover {fill: #f00 !important;}
+.cate_map_wrap .cate_map.cate_map_in path:hover {fill: #f00 !important;}
 #bo_cate {width: 100%; display: inline-block;}
 /*#bo_cate h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}*/
 #bo_cate ul {margin-bottom:10px;padding-left:1px;zoom:1}

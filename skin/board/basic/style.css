@@ -147,8 +147,8 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
 
 /* 게시판 읽기 */
 #bo_v {
-    margin:0 auto 170px;
-    width: 80%;
+    margin-bottom: 170px;
+    width: 100%;
     background:#fff;
     box-sizing:border-box}
 
@@ -338,9 +338,9 @@ box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.1)}
 #bo_vc_sns input {margin:0 5px 0 0}
 
 /*글쓰기*/
-#bo_w {
-    margin: 0 auto 170px;
-    width: 80%;
+#bo_w { 
+    margin-bottom: 170px;
+    width: 100%; 
 }
 #bo_w .bo_v_option li {display:inline-block;float:left;text-align:left;margin:0 5px 0 0}
 #bo_w .bo_v_option li label {vertical-align:baseline}
@@ -365,6 +365,6 @@ box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.1)}
 #bo_w .btn_submit {
     padding:0 20px;
     font-size:1.167em;
-    background-color: #9f0000;
+    background-color: #f00;
 }
 #bo_w .btn_cancel {border-radius:3px;font-size:1.167em}

@@ -16,7 +16,7 @@ echo '<link rel="stylesheet" href="'.$board_skin_url.'/style.css">';
 echo '<link rel="stylesheet" href="'.$board_skin_url.'/responsive.css">';
 
 ?>
-
+<div class="inner">
 <div class="wrap">
     <h2 class="title_type1"><?php echo $board['bo_subject'] ?><span class="sound_only"><?php echo $board['bo_subject'] ?></span></h2>
     <div class="cont-type1 cont_request">
@@ -267,4 +267,5 @@ function select_copy(sw) {
 }
 </script>
 <?php } ?>
+</div>
 <!-- } 게시판 목록 끝 -->

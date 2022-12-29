@@ -8,115 +8,110 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
 
 <!-- 게시물 읽기 시작 { -->
+<div class="inner">
+    <article id="bo_v" style="width:<?php echo $width; ?>">
+        <!--
+            <h1 id="bo_v_title">
+                <?php
+                //if ($category_name) echo $view['ca_name'].' | '; // 분류 출력 끝
+                echo $view['wr_subject']; // 글제목 출력
+                ?>
+            </h1>
+        -->
+        <section id="bo_v_atc">
+            <h2 id="bo_v_atc_title">본문</h2>
 
-<article id="bo_v" style="width:<?php echo $width; ?>">
-<!--
-        <h1 id="bo_v_title">
+            <!-- 본문 내용 시작 { -->
+            <div id="bo_v_con">
+                <!--
+                <?php echo get_view_thumbnail($view['content']); ?>-->
             <?php
-            //if ($category_name) echo $view['ca_name'].' | '; // 분류 출력 끝
-            echo $view['wr_subject']; // 글제목 출력
-            ?>
-        </h1>
--->
+            // 파일 출력
+            $v_img_count = count($view['file']);
+            if($v_img_count) {
+                echo "<div id=\"bo_v_img\">\n";
 
-
-
-    <section id="bo_v_atc">
-        <h2 id="bo_v_atc_title">본문</h2>
-
-        <!-- 본문 내용 시작 { -->
-        <div id="bo_v_con">
-            <!--
-            <?php echo get_view_thumbnail($view['content']); ?>-->
-        <?php
-        // 파일 출력
-        $v_img_count = count($view['file']);
-        if($v_img_count) {
-            echo "<div id=\"bo_v_img\">\n";
-
-            for ($i=0; $i<=count($view['file']); $i++) {
-                if ($view['file'][$i]['view']) {
-                    //echo $view['file'][$i]['view'];
-                    echo get_view_thumbnail($view['file'][$i]['view']);
+                for ($i=0; $i<=count($view['file']); $i++) {
+                    if ($view['file'][$i]['view']) {
+                        //echo $view['file'][$i]['view'];
+                        echo get_view_thumbnail($view['file'][$i]['view']);
+                    }
                 }
+
+                echo "</div>\n";
             }
+            ?>
 
-            echo "</div>\n";
-        }
-         ?>
+                <table id="table">
+                    <tbody>
+                        <tr>
+                            <th>가맹점명</th>
+                            <td><?=$view['wr_subject']?></td>
+                        </tr>
+                        <tr>
+                            <th>주소</th>
+                            <td><?=$view['wr_1']?></td>
+                        </tr>
+                        <tr>
+                            <th>전화번호</th>
+                            <td><?=$view['wr_2']?></td>
+                        </tr>
+                        <tr>
+                            <th>영업시간</th>
+                            <td><?=$view['wr_3']?></td>
+                        </tr>
+                        <tr>
+                            <th>매장서비스</th>
+                            <td><?=$view['wr_4']?></td>
+                        </tr>
+                        <tr>
+                            <th>특이사항</th>
+                            <td><?=$view['wr_5']?></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="clear:both; margin-bottom:20px;"></div>
+                <div id="maps" style="width:100%; height:420px;"></div>
+                </div>
 
-			<table id="table">
-				<tbody>
-					<tr>
-						<th>가맹점명</th>
-						<td><?=$view['wr_subject']?></td>
-					</tr>
-					<tr>
-						<th>주소</th>
-						<td><?=$view['wr_1']?></td>
-					</tr>
-					<tr>
-						<th>전화번호</th>
-						<td><?=$view['wr_2']?></td>
-					</tr>
-					<tr>
-						<th>영업시간</th>
-						<td><?=$view['wr_3']?></td>
-					</tr>
-					<tr>
-						<th>매장서비스</th>
-						<td><?=$view['wr_4']?></td>
-					</tr>
-					<tr>
-						<th>특이사항</th>
-						<td><?=$view['wr_5']?></td>
-					</tr>
-				</tbody>
-			</table>
-            <div style="clear:both; margin-bottom:20px;"></div>
-			<div id="maps" style="width:100%; height:420px;"></div>
-			</div>
+            <?php if ($is_signature) { ?><p><?php echo $signature ?></p><?php } ?>
 
-        <?php if ($is_signature) { ?><p><?php echo $signature ?></p><?php } ?>
+        </section>
+        <!-- 게시물 상단 버튼 시작 { -->
+        <div id="bo_v_top">
+            <?php
+            ob_start();
+            ?>
+            <?php if ($prev_href || $next_href) { ?>
+                <ul class="bo_v_nb">
+                    <?php if ($prev_href) { ?><li><a href="<?php echo $prev_href ?>" class="btn_b01">이전글</a></li><?php } ?>
+                    <?php if ($next_href) { ?><li><a href="<?php echo $next_href ?>" class="btn_b01">다음글</a></li><?php } ?>
+                </ul>
+            <?php } ?>
 
-    </section>
-    <!-- 게시물 상단 버튼 시작 { -->
-    <div id="bo_v_top">
-        <?php
-        ob_start();
-        ?>
-        <?php if ($prev_href || $next_href) { ?>
-            <ul class="bo_v_nb">
-                <?php if ($prev_href) { ?><li><a href="<?php echo $prev_href ?>" class="btn_b01">이전글</a></li><?php } ?>
-                <?php if ($next_href) { ?><li><a href="<?php echo $next_href ?>" class="btn_b01">다음글</a></li><?php } ?>
+            <ul class="bo_v_com">
+                <?php if ($update_href) { ?><li><a href="<?php echo $update_href ?>" class="btn_b01">수정</a></li><?php } ?>
+                <?php if ($delete_href) { ?><li><a href="<?php echo $delete_href ?>" class="btn_b01" onclick="del(this.href); return false;">삭제</a></li><?php } ?>
+                <?php if ($copy_href) { ?><li><a href="<?php echo $copy_href ?>" class="btn_admin" onclick="board_move(this.href); return false;">복사</a></li><?php } ?>
+                <?php if ($move_href) { ?><li><a href="<?php echo $move_href ?>" class="btn_admin" onclick="board_move(this.href); return false;">이동</a></li><?php } ?>
+                <?php if ($search_href) { ?><li><a href="<?php echo $search_href ?>" class="btn_b01">검색</a></li><?php } ?>
+                <li><a href="<?php echo $list_href ?>" class="btn_b01">목록</a></li>
+                <?php if ($reply_href) { ?><li><a href="<?php echo $reply_href ?>" class="btn_b01">답변</a></li><?php } ?>
+                <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b02">글쓰기</a></li><?php } ?>
             </ul>
-        <?php } ?>
-
-        <ul class="bo_v_com">
-            <?php if ($update_href) { ?><li><a href="<?php echo $update_href ?>" class="btn_b01">수정</a></li><?php } ?>
-            <?php if ($delete_href) { ?><li><a href="<?php echo $delete_href ?>" class="btn_b01" onclick="del(this.href); return false;">삭제</a></li><?php } ?>
-            <?php if ($copy_href) { ?><li><a href="<?php echo $copy_href ?>" class="btn_admin" onclick="board_move(this.href); return false;">복사</a></li><?php } ?>
-            <?php if ($move_href) { ?><li><a href="<?php echo $move_href ?>" class="btn_admin" onclick="board_move(this.href); return false;">이동</a></li><?php } ?>
-            <?php if ($search_href) { ?><li><a href="<?php echo $search_href ?>" class="btn_b01">검색</a></li><?php } ?>
-            <li><a href="<?php echo $list_href ?>" class="btn_b01">목록</a></li>
-            <?php if ($reply_href) { ?><li><a href="<?php echo $reply_href ?>" class="btn_b01">답변</a></li><?php } ?>
-            <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b02">글쓰기</a></li><?php } ?>
-        </ul>
+            <?php
+            $link_buttons = ob_get_contents();
+            ob_end_flush();
+            ?>
+        </div>
+        <!-- } 게시물 상단 버튼 끝 -->
         <?php
-        $link_buttons = ob_get_contents();
-        ob_end_flush();
-        ?>
-    </div>
-    <!-- } 게시물 상단 버튼 끝 -->
-
-    <?php
-    include_once(G5_SNS_PATH."/view.sns.skin.php");
-    ?>
-
-</article>
+        include_once(G5_SNS_PATH."/view.sns.skin.php"); ?>
+    </article>
+</div>
 <!-- } 게시판 읽기 끝 -->
 
-<script src="//apis.daum.net/maps/maps3.js?apikey=다음지도key값넣어주세요&#38;libraries=services"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0a7f81f42fff246ceeb1efb3aebf1582&libraries=services"></script>
 <script>
 var juso = "<?=$view['wr_1']?>";
 console.log(juso);
@@ -134,19 +129,25 @@ var map = new daum.maps.Map(mapContainer, mapOption);
 var geocoder = new daum.maps.services.Geocoder();
 
 // 주소로 좌표를 검색합니다
-geocoder.addr2coord(juso, function(status, result) {
+geocoder.addressSearch(juso, function(result, status) {
 
     // 정상적으로 검색이 완료됐으면
      if (status === daum.maps.services.Status.OK) {
 
-        var coords = new daum.maps.LatLng(result.addr[0].lat, result.addr[0].lng);
+        var coords = new daum.maps.LatLng(result[0].y, result[0].x);
 
         // 결과값으로 받은 위치를 마커로 표시합니다
         var marker = new daum.maps.Marker({
             map: map,
             position: coords
         });
-
+        
+        // 인포윈도우로 장소에 대한 설명을 표시합니다
+        var infowindow = new daum.maps.InfoWindow({
+            content: '<div style="width:150px; text-align:center; padding:10px 0; font-weight:700; font-size:14px; color:#f00;"><?=$view['wr_subject']?></div>'
+        });
+        infowindow.open(map, marker);
+        
         // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
         map.setCenter(coords);
     }
