@@ -2,14 +2,30 @@
 /* SIR 지운아빠 */
 
 /* ### 기본 스타일 커스터마이징 시작 ### */
-
+#bo_list { 
+    margin: 0 auto 170px;
+    width: 80%;
+}
 /* 게시판 버튼 */
 /* 목록 버튼 */
-#bo_list a.btn_b01 {}
+#bo_list a.btn_b01 { 
+    padding: 10px 10px;
+    color: #111;
+}
 #bo_list a.btn_b01:focus, #bo_list a.btn_b01:hover {}
-#bo_list a.btn_b02 {}
+#bo_list a.btn_b02 { 
+    padding: 10px 10px;
+    background-color: rgb(255 0 0);
+    border-radius: 35px;
+    transition: all 0.3s ;
+}
+#bo_list a.btn_b02:hover {
+    background-color: rgba(253, 96, 5, 0.836);
+}
 #bo_list a.btn_b02:focus, #bo_list a.btn_b02:hover {}
-#bo_list a.btn_admin {} /* 관리자 전용 버튼 */
+#bo_list a.btn_admin { 
+    padding: 10px 10px;
+} /* 관리자 전용 버튼 */
 #bo_list a.btn_admin:focus, #bo_list .btn_admin:hover {}
 
 /* 읽기 버튼 */
@@ -64,6 +80,14 @@
 #bo_v td.empty_table {}
 
 /* 쓰기 테이블 */
+#bo_w {
+    width: 80%;
+    margin: 0 auto 170px;
+}
+.bo_w-title {
+    margin-bottom: 50px; 
+    font-weight: 700; font-size: 24px; color: #111; line-height: 30px;
+}
 #bo_w table {}
 #bo_w caption {}
 #bo_w .frm_info {}
@@ -71,7 +95,10 @@
 #bo_w .frm_file {}
 
 #bo_w .tbl_frm01 {}
-#bo_w .tbl_frm01 th {}
+#bo_w .tbl_frm01 th { 
+    width: 150px;
+    text-align: center;
+}
 #bo_w .tbl_frm01 td {}
 #bo_w .tbl_frm01 textarea, #bo_w tbl_frm01 .frm_input {}
 #bo_w .tbl_frm01 textarea {}
@@ -111,7 +138,12 @@
 #bo_list .txt_active {color:#5d910b}
 #bo_list .txt_expired {color:#ccc}
 
-.cate_map_wrap {height: 400px;border: 1px solid #ccc; display: inline-block;}
+.cate_map_wrap {
+    display: inline-block;
+    margin-bottom: 50px;
+    height: 400px;
+    border: 1px solid #ccc; 
+}
 .cate_map_wrap h1 {padding: 10px 0 0 15px; font-size: 22px; display: inline-block;}
 .cate_map_wrap h2 {text-align: left; font-size: 16px; margin: 5px 0 13px 15px; color: #717171;}
 
@@ -127,7 +159,13 @@
 #bo_cate li {float:left;margin-bottom:-1px;width:25%}
 #bo_cate a {display:block;position:relative;margin-left:-1px;padding:10px 0;border:1px solid #ddd;color:#888;text-align:center;letter-spacing:-0.1em;line-height:1.2em;cursor:pointer}
 #bo_cate a:focus, #bo_cate a:hover, #bo_cate a:active {text-decoration:none}
-#bo_cate #bo_cate_on {z-index:2;border:1px solid #ffb244;background:#fff;color:#ffb244; font-weight:bold}
+#bo_cate #bo_cate_on {
+    z-index:2;
+    border:1px solid #eb0b0b;
+    background:#fff;
+    color:#eb0b0b; 
+    font-weight:bold
+}
 #bo_cate_ul {margin: 0 15px;}
 
 .td_subject img {margin-left:3px}
@@ -136,7 +174,11 @@
 .bo_fx {margin:5px 0;zoom:1}
 .bo_fx:after {display:block;visibility:hidden;clear:both;content:""}
 .bo_fx ul {margin:0;padding:0;list-style:none}
-#bo_list_total {float:left;padding-top:5px}
+#bo_list_total {
+    float:left;
+    padding-top:5px;
+    font-weight: 700;
+}
 .btn_bo_user {float:right;margin:0;padding:0;list-style:none}
 .btn_bo_user li {float:left;margin-left:5px}
 .btn_bo_adm {float:left}
@@ -298,11 +340,11 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
 	padding: 4px;
 }
 #btn_submit{
-    background: #ffb244;
+    background: #eb0b0b;
     color: #fff;
     cursor: pointer;
     padding: 0 20px;
     height: 30px;
     line-height: 1em;
-    border: 1px solid #ffb244;
+    border: 1px solid #eb0b0b;
 }

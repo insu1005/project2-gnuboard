@@ -7,11 +7,21 @@
 
 /* PC 목록 */
 table.list-pc { border-bottom: 1px solid #ddd; margin-bottom:15px; }
-table.list-pc th { white-space:nowrap; clear:both; height:43px; background: url('./img/head.gif') repeat-x !important; font-weight:bold; font-size:12px; color:#333; border:0px !important; padding:0px !important; margin:0px !important; text-align:center; }
+table.list-pc th { 
+	white-space:nowrap; clear:both; height:43px; 
+	background: url('./img/head.gif') repeat-x !important; 
+	font-weight:bold; font-size:12px; color:#333; text-align:center; 
+	border:0px !important; 
+	padding:0px !important; margin:0px !important; 
+	vertical-align: middle;
+}
 table.list-pc th a { text-decoration:none; color:#333; }
 table.list-pc th a:hover, table.bo-list th a:focus, table.bo-list th a:active { color:#000; }
 table.list-pc td { white-space:nowrap; }
-table.list-pc tbody tr:first-child td { border-top:0 !important; }
+table.list-pc tbody tr:first-child td { 
+	border-top:0 !important; 
+	text-align: center;
+}
 table.list-pc .list-now { background: #fafafa; }
 table.list-pc .list-img img { width:40px; height:40px; border-radius:50%; }
 table.list-pc .list-img i { width: 40px; height: 40px; line-height:40px; margin:0px; font-size: 24px; background: rgb(238, 238, 238); border-radius:50%; text-align: center; color: rgb(255, 255, 255); display: inline-block; }
@@ -38,7 +48,10 @@ table.list-pc .list-none { padding:100px 0px; }
 .list-mobile .media .media-body { padding-left:0px; }
 
 /* 목록 공통 */
-.list-wrap { width:100%; }
+.list-wrap { 
+	margin: 0 auto 170px;
+	width:80%; 
+}
 .list-btn-box { margin-bottom: 15px; }
 .list-btn-box a span { margin-left: 4px; }
 .list-btn-box .sort a { color:crimson !important; font-weight:bold !important; }
@@ -119,7 +132,11 @@ table.list-pc .list-none { padding:100px 0px; }
 #bo_vc_send_sns input {	margin:0 0 0 5px; }
 
 /* 쓰기 공통 */
-.write-wrap { width:100%; overflow:hidden; }
+.write-wrap { 
+	width:80%; 
+	margin: 0 auto;	
+	overflow:hidden; 
+}
 .write-wrap h2 { padding:0px; margin:0px; font-size:14px; font-weight:bold; }
 .write-wrap label { font-weight:bold; margin-top:4px; }
 .write-wrap .write-content { height: 300px; }

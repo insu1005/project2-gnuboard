@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+#fboardlist { 
+    margin: 0 auto 170px;
+    width: 80%;
+}
 /* 게시판 목록 */
 #bo_list {position:relative;margin-bottom:20px}
 #bo_list:after {display:block;visibility:hidden;clear:both;content:""}
@@ -66,7 +70,15 @@ box-shadow:inset 0 2px 5px rgb(33, 135, 202)}
 .more_opt {display:none;position:absolute;top:45px;right:0;background:#fff;border:1px solid #b8bfc4;z-index:999}
 .more_opt:before {content:"";position:absolute;top:-8px;right:13px;width:0;height:0;border-style:solid;border-width:0 6px 8px 6px;border-color:transparent transparent #b8bfc4 transparent}
 .more_opt:after {content:"";position:absolute;top:-6px;right:13px;width:0;height:0;border-style:solid;border-width:0 6px 8px 6px;border-color:transparent transparent #fff transparent}
-.more_opt li {border-bottom:1px solid #f1f1f1;padding:10px;float:inherit;width:90px;margin:0;color:#6b757c;text-align:left}
+.more_opt li {
+    border-bottom:1px solid #f1f1f1;
+    padding:10px;
+    float:inherit;
+    width:120px;
+    margin:0;
+    color:#6b757c;
+    text-align:left
+}
 .more_opt li:last-child {border-bottom:0}
 .more_opt li button, .more_opt li a {width:100%;border:0;background:#fff;color:#6b757c}
 .more_opt li:hover a,
@@ -134,13 +146,22 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
 .autosave_del {background:url(./img/close_btn.png) no-repeat 50% 50%;text-indent:-999px;overflow:hidden;height:20px;width:20px}
 
 /* 게시판 읽기 */
-#bo_v {margin-bottom:20px;background:#fff;box-sizing:border-box}
+#bo_v {
+    margin:0 auto 170px;
+    width: 80%;
+    background:#fff;
+    box-sizing:border-box}
 
 #bo_v_table {position:absolute;top:0;right:16px;margin:0;padding:0 5px;height:25px;background:#ff3061;color:#fff;font-weight:bold;line-height:2.2em}
 
 #bo_v_title {}
 #bo_v_title .bo_v_cate {display:inline-block;line-height:20px;background:#e2eaf6;color:#3a8afd;padding:0 10px;border-radius:3px;}
-#bo_v_title .bo_v_tit {display:block;font-size:2em;margin:5px 0 0;word-break:break-all}
+#bo_v_title .bo_v_tit {
+    display:block;
+    font-weight: 700; font-size:2em;
+    margin:5px 0 0;
+    word-break:break-all
+}
 
 #bo_v_info {margin:0;border-bottom:1px solid #f1f1f1;color:#666}
 #bo_v_info:after {display:block;visibility:hidden;clear:both;content:""} 
@@ -317,6 +338,10 @@ box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.1)}
 #bo_vc_sns input {margin:0 5px 0 0}
 
 /*글쓰기*/
+#bo_w {
+    margin: 0 auto 170px;
+    width: 80%;
+}
 #bo_w .bo_v_option li {display:inline-block;float:left;text-align:left;margin:0 5px 0 0}
 #bo_w .bo_v_option li label {vertical-align:baseline}
 #bo_w .bo_v_option .chk_box input[type="checkbox"] + label span {margin-left:0;margin-right:5px}
@@ -337,5 +362,9 @@ box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.1)}
 #bo_w .bo_w_flie .frm_input {margin:10px 0 0}
 #bo_w .bo_w_flie .file_del {position:absolute;top:10px;right:10px;font-size:0.92em;color:#7d7d7d}
 #bo_w .bo_w_select select {border:1px solid #d0d3db;width:100%;height:40px;border-radius:3px}
-#bo_w .btn_submit {padding:0 20px;font-size:1.167em}
+#bo_w .btn_submit {
+    padding:0 20px;
+    font-size:1.167em;
+    background-color: #9f0000;
+}
 #bo_w .btn_cancel {border-radius:3px;font-size:1.167em}

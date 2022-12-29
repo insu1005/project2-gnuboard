@@ -76,8 +76,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             <div style="clear:both; margin-bottom:20px;"></div>
 			<div id="maps" style="width:100%; height:420px;"></div>
 			</div>
-        <?php//echo $view['rich_content']; // {이미지:0} 과 같은 코드를 사용할 경우 ?>
-        <!-- } 본문 내용 끝 -->
 
         <?php if ($is_signature) { ?><p><?php echo $signature ?></p><?php } ?>
 

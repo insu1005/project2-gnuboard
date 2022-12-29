@@ -15,7 +15,7 @@ add_javascript('<script src="'.$board_skin_url.'/d3.min.js"></script>', 0);
 <!-- <h2 id="container_title"><?php echo $board['bo_subject'] ?><span class="sound_only"> 목록</span></h2>==?
 
 <!-- 게시판 목록 시작 { -->
-<div id="bo_list" style="width:<?php echo $width; ?>">
+<div id="bo_list">
 
     <!-- 게시판 카테고리 시작 { -->
 	<div class="cate_map_wrap">

@@ -10,8 +10,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 <!-- 게시물 읽기 시작 { -->
 
-<article id="bo_v" style="width:<?php echo $width; ?>">
-    <header>
+<article id="bo_v">
+    <div class="bo_v_title-wrap">
         <h2 id="bo_v_title">
             <?php if ($category_name) { ?>
             <span class="bo_v_cate"><?php echo $view['ca_name']; // 분류 출력 끝 ?></span> 
@@ -21,7 +21,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             echo cut_str(get_text($view['wr_subject']), 70); // 글제목 출력
             ?></span>
         </h2>
-    </header>
+    </div>
 
     <section id="bo_v_info">
         <h2>페이지 정보</h2>
