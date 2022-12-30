@@ -10,7 +10,7 @@
 /* skip-nav -E */
 /* common -S */
 .inner {
-    width: 1280px;
+    width: 1280px; min-width: 1280px;
     margin: 0 auto;
     position: relative;
   }

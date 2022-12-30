@@ -1,15 +1,70 @@
 @charset "utf-8";
-
+.inner > .center { margin: 40px 0 170px;} 
 .w100 {width: 100% !important;}
 .inline-block {display: inline-block;}
 .cont_request .sub_cate2 {border-bottom: 0;padding:5px 0;margin: 0;text-align: left;}
+.cont_request .sub_cate2 input { 
+    text-align: center;
+    background-color: #db0101;
+    color: #fff;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+}
+.join-img {
+    margin-right: 60px;
+    width: 500px; height: 454px;
+    background-image: url(img/join.png);
+    border-radius: 30px;
+    float: left;
+}
+.join-wrap { float: left;}
+.join-wrap p{ 
+    margin-bottom: 50px;
+    font-weight: 800; font-size: 24px; line-height: 40px;
+}
+.div_right .go { 
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    padding-top: 70px;
+    transition: all 0.3s;
+    animation: twinkle 1.5s infinite;
+}
+.div_right .go span{ 
+    display: block;
+    font-weight: 800; font-size: 28px; line-height: 38px;
+    transition: all 0.3s;
+}
+.div_right .go span:nth-child(2){ 
+    opacity: 0;
+    transition: all 0.3s;
+}
+.div_right .go:hover {
+    border: 5px solid #000;
+}
+.div_right .go:hover span {transform: translateY(-30px);}
+.div_right .go:hover span:nth-child(2){ opacity: 1;}
+@keyframes twinkle { 
+    0%{ background-color: #f00; color: #fff;}
+    50%{ background-color: rgb(255, 166, 0); color: #f00;}
+    100%{ background-color: #f00; color: #fff;}
+}
+.join-wrap p strong { font-weight: 800; color: rgb(255, 0, 0);}
+.join-wrap p em { 
+    display: block;
+    margin-top: 40px;
+    font-weight: 800; font-size: 45px;
+}
+.center .top-fix { margin-top: 50px !important;}
 .cont_request .sub_cate2 li {margin-right: 0;margin-bottom: 3px;}
 .cont_request .sub_cate2 li a {border-radius: 3px;border-color: #bbb;}
 .cont_request td {line-height: 1.7em;}
 .cont_request td input, .cont_request td select {width: auto;min-width: 30%;}
 .cont_request td input[type="checkbox"] {min-width: inherit;}
 .cont_request .row .btn_left {padding-top: 15px;}
-.table_request th {background:#337ab7;color: #fff;}
+.table_request th {background:#cc1010;color: #fff;}
 .table_request td {padding: 7px 10px;}
 .td_title {font-size: 1.4em;color: #222;background: #f9f9f9;padding: 8px 20px;}
 .td_cont {padding: 20px 20px;box-sizing: border-box;font-size: 1.15em;color: #222;}
@@ -18,20 +73,35 @@
 .state span {padding: 5px 10px;box-sizing: border-box;display: block;color: #fff;font-weight: 600;}
 .state .state_rec {background: #ec971f;}
 .state .state_ing {background: #5cb85c;}
-.state .state_end {background: #666;}
-.state .state_stop {background: #ec2f32;}
+.state .state_end {background: rgb(247, 23, 23);}
+.state .state_stop {background: #e0d31e;}
 .state .state_cancel {background: #9195ec;}
 .answer {margin-right: 5px;}
 .lock {margin-right: 5px;}
 .service_info {display:block;width: 100%;border: 1px solid #bbb;padding: 25px 40px;box-sizing: border-box;margin:20px 0 40px 0;}
-.service_title {width: 20%;display: inline-block;font-size: 1.9em;float: left;text-align: center;vertical-align:middle;padding: 12px 0;line-height: 1.3em;}
+.service_title {
+    width: 20%;
+    display: inline-block;
+    font-weight: 800; font-size: 1.9em;float: left;text-align: center;
+    vertical-align:middle;
+    padding: 12px 0;
+    line-height: 1.3em;
+}
 .service_type1 {width: 80%;display: inline-block;text-align: center;}
 .service_type1 li {display: inline-block;text-align: center;vertical-align: top;background: url("img/service1_arrow.png") no-repeat 5px 25px;padding-left: 25px;}
 .service_type1 li.pl0 {padding-left: 0;background: none;}
-.service_type1 li p {color: #2d9ad9;font-weight: 600;line-height: 1.3em;margin-top: 3px;}
-.service_txt {background: #eee;padding:10px 20px;box-sizing: border-box;margin-top: 5px;color: #222;font-size: 1em;line-height: 1.6em;}
+.service_type1 li p {color: #ff0000;font-weight: 800;line-height: 1.3em;margin-top: 3px;}
+.service_txt {
+    box-sizing: border-box;
+    padding:10px 20px;
+    width: 680px;
+    border-radius: 50px;
+    background: rgb(255, 128, 111);
+    margin-top: 5px;
+    font-size: 1em; color: rgb(255, 255, 255); line-height: 1.6em;
+}
 .comment_area {background: #f2f2f2;padding:0;box-sizing: border-box;margin: 20px 0 0 0;border: 1px solid #ddd;}
-.comment_area h4 {background: #337ab7;padding: 10px 20px;box-sizing: border-box;font-size: 1.1em;border-bottom: 1px dotted #bbb;margin: 0;color: #fff;}
+.comment_area h4 {background: #e2260e;padding: 10px 20px;box-sizing: border-box;font-size: 1.1em;border-bottom: 1px dotted #bbb;margin: 0;color: #fff;}
 .comment_area h4 span {margin-right: 5px;}
 .comment_area ul li {padding: 2px 20px 2px 10px;box-sizing: border-box;border-bottom: 1px dotted #bbb;background: #fff;}
 .comment_area ul li:last-child {border-bottom: 0;}
@@ -39,12 +109,23 @@
 .comment_area ul li p {background:url("img/answer_ic.png")no-repeat 10px center;padding:5px 8px 5px 32px;box-sizing: border-box;}
 .comment_area ul li .col-md-4 {margin-top: 10px;}
 .comment_area table {margin-top: 0;border-top: 0;}
-.comment_area .btn_blue {margin: 10px 0;}
+.comment_area .btn_blue {
+    margin: 10px 0;
+    background-color: #f00;
+    height: 50px;
+}
 
 
 /*-- 테이블 --*/
-table {width: 100%;font-size: 0.9em;color: #666;border: 0;border-top: 2px solid #2171de;border-spacing: 0;margin-top: 10px;}
-table th {border: 0;border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;padding: 12px;box-sizing: border-box;background: #f2f2f2;text-align: center;}
+table {width: 100%;font-size: 0.9em;color: #666;border: 0;border-top: 2px solid #ffffff;border-spacing: 0;margin-top: 10px;}
+table th {
+    border: 0;border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;
+    padding: 12px;
+    box-sizing: border-box;
+    background: #ff7474;
+    font-weight: 800; color: #fff; text-align: center;
+}
+table th label { font-weight: 800; color: #fff; text-align: center;}
 table td {border: 0;border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;padding: 12px;box-sizing: border-box;}
 caption {font-size: 0;height: 0;}
 /*-- 테이블 --*/
@@ -52,26 +133,39 @@ caption {font-size: 0;height: 0;}
 .center {text-align: center;}
 .right {text-align: right;}
 .left {text-align: left;}
-.blue {color: #447ecd;}
+.blue {color: #e00c0c;}
 .bold {font-weight: 600;}
-.mt20 {margin-top: 20px;}
+.mt20 { margin: 100px 0;}
 .mt10 {margin-top: 10px;}
+.here-fix { margin: 20px 0;}
 .ml0 {margin-left: 0 !important;}
 .clear {clear: both;}
 .input_type1 {background : #fff !important; border :1px solid #bbb;}
 .border_r0 {border-right: 0 !important;}
 .btn {border: 1px solid #bbb;padding: 6px;border-radius: 3px;background: #fff;display: inline-block;}
-.btn:hover {color:#f2f2f2;}
-.btn_blue {background: #337ab7;color: #fff;border-color: #2e6da4;}
-.btn_blue:hover {background:#2d6ca2;}
-.btn_red {display:inline-block;background: #d9534f;color: #fff !important;border: 1px solid #d43f3a;padding: 7px 10px;border-radius: 3px;}
-.btn_red:hover {background:#d43f3a;}
+.btn:hover {color:#ff0000;}
+.btn_blue {
+    background: #ff0000;color: 
+    #fff;
+    border-color: #ff0000;
+}
+.center.mt20 .align-fix { line-height: 20px;}
+.btn_blue:hover {background:#ff5e00;}
+.btn_red {display:inline-block;background: #f00;color: #fff !important;border: 1px solid #f00;padding: 7px 10px;border-radius: 3px;}
 .btn_submit {padding:8px; border:0;background: #337ab7;color:#fff;cursor:pointer}
 .btn_lg {font-size: 18px;font-weight: 600;padding: 10px 16px;border-radius: 6px;}
 .table_request th a {color:#fff !important;}
 .div_left {width: 70%;display: inline-block;float: left;}
+.just-fix { margin-top: 80px;}
+.div_left .request-detail{ 
+    margin: 30px 0;
+    line-height: 24px;
+}
 .div_right {width: 30%;display: inline-block;}
-fieldset .btn_submit {padding:0 7px;height:24px;line-height:1em}
+fieldset .btn_submit {
+    padding:0 7px;height:24px;line-height:1em;
+    background-color: rgb(247, 23, 23);
+}
 input {border-radius: 3px;box-shadow: none;border: 1px solid #bbb;padding: 6px;margin: 2px 5px;}
 hr {border-color: #ccc;}
 textarea {width: 100%;min-height: 150px;}
@@ -83,7 +177,7 @@ select {padding: 5px 10px;border-radius: 3px;}
 .pr10 {padding-right: 10px !important;}
 .title_type1 {font-size: 2.4em;color: #333;margin:50px 0 13px 0;padding: 0;}
 .title_type1 span {border-top: 3px solid #333;}
-.title_h4 {font-size: 18px;}
+.title_h4 {font-weight: 800; font-size: 24px; line-height: 34px;}
 .mp {color:#444;}
 
 /* 서브 카테고리 */

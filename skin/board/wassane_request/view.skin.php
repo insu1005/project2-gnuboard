@@ -29,14 +29,14 @@ if ($is_admin && ($prev_href || $next_href)) {
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
 <div class="inner">
     <div class="wrap">
-        <h1 class="title_type1"><span>유</span>지보수 요청</h1>
+        <h1 class="title_type1">상담문의</h1>
         <div class="cont-type1 cont_request">
             <div class="row mt20">
                 <div class="div_left btn_left left">
                     <?php echo $nav_buttons; ?>
                 </div>
                 <div class="div_right right">
-                    <?php if ($write_href) { ?><a href="<?php echo $write_href ?>" class="btn_red btn_lg">유지보수 신청하기</a><?php } ?>
+                    <?php if ($write_href) { ?><a href="<?php echo $write_href ?>" class="btn_red btn_lg">오구쌀과의 상담</a><?php } ?>
                 </div>
             </div>
             <table>

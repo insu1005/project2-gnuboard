@@ -21,7 +21,7 @@ echo '<link rel="stylesheet" href="'.$board_skin_url.'/responsive.css">';
     <h2 class="title_type1"><?php echo $board['bo_subject'] ?><span class="sound_only"><?php echo $board['bo_subject'] ?></span></h2>
     <div class="cont-type1 cont_request">
         <div class="service_info">
-            <div class="service_title">유지보수<br/>진행절차</div>
+            <div class="service_title">오구쌀 피자<br/>가맹문의</div>
             <ul class="service_type1">
                 <li class="pl0"><img src="<?php echo $board_skin_url;?>/img/service1_1.png" /><p>온라인접수</p></li>
                 <li><img src="<?php echo $board_skin_url;?>/img/service1_2.png" /><p>견적확인</p></li>
@@ -30,10 +30,10 @@ echo '<link rel="stylesheet" href="'.$board_skin_url.'/responsive.css">';
                 <li><img src="<?php echo $board_skin_url;?>/img/service1_5.png" /><p>사이트 반영</p></li>
             </ul>
             <div class="service_txt">
-                수많은 홈페이지를 운영해 온 경험과 노하우를 바탕으로 유지보수 전문업체 와싸네솔루션이 고객님의 요구사항을 신속하고 정확하게 인지하여 홈페이지의 문제점을 최대한 빠르게 해결해드립니다.
+                오구오구!! 오구쌀피자와 함께해요! 오구쌀 여러분 대환영! 오구쌀피자의 가족이 되는 것을 환영합니다!
             </div>
         </div>
-        <div class="row mt20">
+        <div class="row mt20 clearfix">
             <div class="div_left left">
                 <!-- 게시판 카테고리 : 시작 -->
                 <?php if ($is_category) { ?>
@@ -43,8 +43,12 @@ echo '<link rel="stylesheet" href="'.$board_skin_url.'/responsive.css">';
                 <?php } ?>
                 <!-- 게시판 카테고리 : 끝 -->
             </div>
-            <div class="div_right right">
-                <a href="<?php echo $write_href?$write_href:G5_BBS_URL . '/login.php?url=' . $urlencode ?>" class="btn btn_lg btn_red white">유지보수 신청하기</a>
+            <div class="join-img"></div>
+            <div class="join-wrap">
+                <p>오구오구 여러분 오구쌀 피자와 함께할가요?<br>저희와 함께하길 원하면 하단에 <strong>"오구쌀 피자와 함께하기"</strong> 를 <br><em>클릭해주세요!</em></p>
+                <div class="div_right right">
+                    <a href="<?php echo $write_href?$write_href:G5_BBS_URL . '/login.php?url=' . $urlencode ?>" class="btn btn_lg btn_red white go"><span>오구쌀 피자와<br> 함께하기</span><span>GO</span></a>
+                </div>
             </div>
         </div>
         <form name="fboardlist" id="fboardlist" action="./board_list_update.php" onsubmit="return fboardlist_submit(this);" method="post">
@@ -159,7 +163,7 @@ echo '<link rel="stylesheet" href="'.$board_skin_url.'/responsive.css">';
             }?>
             </tbody>
         </table>
-        <div class="mt10 right">
+        <div class="mt10 right here-fix">
             <span class="bold blue"><?php echo $page ?> page</span> /
             <span>Total <?php echo number_format($total_count) ?></span>
         </div>
@@ -188,7 +192,7 @@ echo '<link rel="stylesheet" href="'.$board_skin_url.'/responsive.css">';
 
 <!-- 게시판 검색 시작 { -->
 <fieldset class="center">
-    <form name="fsearch" method="get">
+    <form name="fsearch top-fix" method="get">
     <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
     <input type="hidden" name="sca" value="<?php echo $sca ?>">
     <input type="hidden" name="sop" value="and">

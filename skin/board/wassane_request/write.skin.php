@@ -39,15 +39,19 @@ if(!$wr_name) $wr_name = $member['mb_name']; // 이름
 
         <div class="cont-type1 cont_request">
         <div class="row mt20">
-                <div class="div_left">
-                    <h4 class='title_h4'>유지보수 요청을 위해 아래 요청내용을 작성해 주십시요.<br/>
-                        담당자의 검토를 거쳐 견적 및 유지보수 진행에 따른 사항을 안내해 드리겠습니다.</h4>
-                    <p class="mt20 mp">내용은 되도록 자세하게 작성해 주시면 작업이 정확하고 신속하게 이루어집니다.<br/>
+                <div class="div_left just-fix">
+                    <h4 class='title_h4'>오구쌀 피자와 함께 하기 위한 요청내용을 작성하세요.<br/>
+                        오구쌀 담당자의 검토를 거쳐 견적 및 유지보수 진행에 따른 사항을 안내해 드리겠습니다.</h4>
+                    <p class="mt20 mp request-detail">내용은 되도록 자세하게 작성해 주시면 작업이 정확하고 신속하게 이루어집니다.<br/>
                         작업은 입금확인 후 진행됩니다.
                     </p>
+                    <p class="mt20 mp request-detail">여러분 오구쌀 피자에 관심 가져주셔서 감사합니다! 저희와 함께한다면 언제 어디서든지 힘이되겠습니다!<br/>
+                        항상 으뜸이 되는 피자 유기농 피자로 강력히 어필하는 오구쌀 피자 훌륭한 선택입니다!
+                    </p>
+                    <p class="mt20 mp request-detail">저희와 함께하는 꿈! 반드시 이루어 드리겠습니다! 오늘 하루도 행복하세요! 오구오구 여러분과 함께합니다!</p>
                 </div>
                 <div class="div_right right">
-                    <img src="<?php echo $board_skin_url; ?>/img/request_img.png" alt="유지보수 요청"/>
+                    <img src="<?php echo $board_skin_url; ?>/img/request.png" alt="오구쌀 피자와 함께하세요!"/>
                 </div>
             </div>
 
@@ -172,10 +176,10 @@ if(!$wr_name) $wr_name = $member['mb_name']; // 이름
                             <select id='wr_stat' name='wr_3' class='form-control inline-block' style="display:inline-block;">
                                 <option value=''>진행상황선택</option>
                                 <option value='0'>0: 접수대기</option>
-                                <option value='1'>1: 진행중</option>
-                                <option value='2'>2: 작업완료</option>
-                                <option value='3'>3: 작업보류</option>
-                                <option value='4'>4: 작업취소</option>
+                                <option value='1'>1: 상담중</option>
+                                <option value='2'>2: 상담완료</option>
+                                <option value='3'>3: 상담보류</option>
+                                <option value='4'>4: 상담취소</option>
                             </select>
                         </td>
                     </tr>
@@ -237,7 +241,7 @@ if(!$wr_name) $wr_name = $member['mb_name']; // 이름
                 </tbody>
             </table>
             <div class="center mt20">
-                <input type="submit" value="확인" id="btn_submit" accesskey="s" class="btn btn_blue">
+                <input type="submit" value="확인" id="btn_submit" accesskey="s" class="btn btn_blue align-fix">
                 <a href="./board.php?bo_table=<?php echo $bo_table ?>" class="btn btn-default">취소</a>
             </div>
             </form>
