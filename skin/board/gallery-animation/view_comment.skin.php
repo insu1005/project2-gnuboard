@@ -30,11 +30,11 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
 	?>
 
 	<article id="c_<?php echo $comment_id ?>" <?php if ($cmt_depth) { ?>style="margin-left:<?php echo $cmt_depth ?>px;border-top-color:#e0e0e0"<?php } ?>>
-        <div class="pf_img"><?php echo get_member_profile_img($list[$i]['mb_id']); ?></div>
+        <div class="pf_img"><?php echo get_member_profile_img($list[$i]['mb_id']) ?></div>
         
         <div class="cm_wrap">
 
-            <div style="z-index:<?php echo $cmt_sv; ?>">
+            <header style="z-index:<?php echo $cmt_sv; ?>">
 	            <h2><?php echo get_text($list[$i]['wr_name']); ?>님의 <?php if ($cmt_depth) { ?><span class="sound_only">댓글의</span><?php } ?> 댓글</h2>
 	            <?php echo $list[$i]['name'] ?>
 	            <?php if ($is_ip_view) { ?>
@@ -46,7 +46,7 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
 	            <?php
 	            include(G5_SNS_PATH.'/view_comment_list.sns.skin.php');
 	            ?>
-	        </div>
+	        </header>
 	
 	        <!-- 댓글 출력 -->
 	        <div class="cmt_contents">
@@ -65,7 +65,7 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
                             $c_wr_content = $cmt['wr_content'];
                         }
 	                }
-				?>
+				?>            
 	            <?php } ?>
 	        </div>
 	        <span id="edit_<?php echo $comment_id ?>" class="bo_vc_w"></span><!-- 수정 -->
@@ -74,7 +74,7 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
 	        <input type="hidden" value="<?php echo strstr($list[$i]['wr_option'],"secret") ?>" id="secret_comment_<?php echo $comment_id ?>">
 	        <textarea id="save_comment_<?php echo $comment_id ?>" style="display:none"><?php echo get_text($list[$i]['content1'], 0) ?></textarea>
 		</div>
-        <?php if($is_comment_reply_edit) { ?>
+        <?php if($is_comment_reply_edit){ ?>
 		<div class="bo_vl_opt">
             <button type="button" class="btn_cm_opt btn_b01 btn"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><span class="sound_only">댓글 옵션</span></button>
         	<ul class="bo_vc_act">
@@ -98,6 +98,7 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
 		        container.hide();
 		    });
 		});
+			
 		</script>
     </article>
     <?php } ?>
@@ -161,7 +162,7 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
             <?php } ?>
         </div>
         <div class="btn_confirm">
-        	<span class="secret_cm chk_box">
+            <span class="secret_cm chk_box">
 	            <input type="checkbox" name="wr_secret" value="secret" id="wr_secret" class="selec_chk">
 	            <label for="wr_secret"><span></span>비밀글</label>
             </span>

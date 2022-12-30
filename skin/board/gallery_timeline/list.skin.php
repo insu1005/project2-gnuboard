@@ -63,7 +63,8 @@ function remove_tag($str, $remove_tags) {
 
 
     <!-- 게시판 페이지 정보 및 버튼 시작 { -->
-    <div id="bo_btn_top">
+<div class="inner clearfix">
+	<div id="bo_btn_top">
         <div id="bo_list_total">
             <span>Total <?php echo number_format($total_count) ?>건</span>
             <?php echo $page ?> 페이지
@@ -240,6 +241,7 @@ function remove_tag($str, $remove_tags) {
         <input type="submit" value="검색" class="sch_btn">
         </form>
     </fieldset>
+</div>
     <!-- } 게시판 검색 끝 -->   
 
 

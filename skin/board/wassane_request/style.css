@@ -113,6 +113,7 @@
     margin: 10px 0;
     background-color: #f00;
     height: 50px;
+    line-height: 50px;
 }
 
 
@@ -150,9 +151,9 @@ caption {font-size: 0;height: 0;}
     border-color: #ff0000;
 }
 .center.mt20 .align-fix { line-height: 20px;}
-.btn_blue:hover {background:#ff5e00;}
+.btn_blue:hover {background:#ff5e00; border:1px solid #ff5e00; color: #fff;}
 .btn_red {display:inline-block;background: #f00;color: #fff !important;border: 1px solid #f00;padding: 7px 10px;border-radius: 3px;}
-.btn_submit {padding:8px; border:0;background: #337ab7;color:#fff;cursor:pointer}
+.btn_submit {padding:8px; border:0;background: #ff0000;color:#fff;cursor:pointer}
 .btn_lg {font-size: 18px;font-weight: 600;padding: 10px 16px;border-radius: 6px;}
 .table_request th a {color:#fff !important;}
 .div_left {width: 70%;display: inline-block;float: left;}
@@ -165,7 +166,10 @@ caption {font-size: 0;height: 0;}
 fieldset .btn_submit {
     padding:0 7px;height:24px;line-height:1em;
     background-color: rgb(247, 23, 23);
+    transition: all 0.3s;
 }
+.text-fix { line-height: 40px !important;}
+fieldset .btn_submit:hover { background-color: #ff5e00 !important;}
 input {border-radius: 3px;box-shadow: none;border: 1px solid #bbb;padding: 6px;margin: 2px 5px;}
 hr {border-color: #ccc;}
 textarea {width: 100%;min-height: 150px;}

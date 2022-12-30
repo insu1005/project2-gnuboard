@@ -27,7 +27,7 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
      ?>
 
     <article id="c_<?php echo $comment_id ?>" <?php if ($cmt_depth) { ?>style="margin-left:<?php echo $cmt_depth ?>px;border-top-color:#e0e0e0"<?php } ?>>
-        <header style="z-index:<?php echo $cmt_sv; ?>">
+        <div style="z-index:<?php echo $cmt_sv; ?>">
             <h2><?php echo get_text($list[$i]['wr_name']); ?>님의 <?php if ($cmt_depth) { ?><span class="sound_only">댓글의</span><?php } ?> 댓글</h2>
             <?php echo $list[$i]['name'] ?>
             <?php if ($is_ip_view) { ?>
@@ -39,7 +39,7 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
             <?php
             include(G5_SNS_PATH.'/view_comment_list.sns.skin.php');
             ?>
-        </header>
+        </div>
 
         <!-- 댓글 출력 -->
         <div class="cmt_contents">

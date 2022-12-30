@@ -123,7 +123,7 @@ if($w == '') $w = 'c';
         </tbody>
     </table>
     <div class="center">
-        <input type="submit" id="btn_submit" class="btn btn_blue" value="댓글등록">
+        <input type="submit" id="btn_submit" class="btn btn_blue text-fix" value="댓글등록">
     </div>
     </form>
 </div>

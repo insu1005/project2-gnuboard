@@ -97,9 +97,11 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         <div class="lnb">
             <div class="inner">
                    <ul class="lnb-list">
-                      <li class="on"><a href="/sub/sub2-1.php">브랜드 소개</a></li>
-                      <li><a href="/sub/sub1-2.php">회사소개</a></li>
-                      <li><a href="/sub/sub1-3.php">오시는 길</a></li>
+                      <li class="on"><a href="/sub/sub2-1.php">신메뉴</a></li>
+                      <li><a href="/sub/sub1-2.php">반미터 피자</a></li>
+                      <li><a href="/sub/sub1-3.php">클래식 쌀피자</a></li>
+                      <li><a href="/sub/sub1-3.php">프리미엄 쌀피자</a></li>
+                      <li><a href="/sub/sub1-3.php">세트/사이드</a></li>
                    </ul>
             </div>
         </div>

@@ -15,12 +15,22 @@
 /* 읽기 버튼 */
 #bo_v a.btn_b01 {}
 #bo_v a.btn_b01:focus, #bo_v a.btn_b01:hover {}
-#bo_v a.btn_b02 {}
-#bo_v a.btn_b02:focus, #bo_v a.btn_b02:hover {}
+#bo_v a.btn_b02 { background-color: #f00;}
+#bo_v a.btn_b02:focus, #bo_v a.btn_b02:hover { background-color: #f00; color: rgb(255, 196, 0);}
 #bo_v a.btn_admin {} /* 관리자 전용 버튼 */
 #bo_v a.btn_admin:focus, #bo_v a.btn_admin:hover {}
-
+.btn_b02 { 
+    background-color: #f00 !important;
+    border-radius: 30px !important;
+}
+.btn_b02:hover { background-color: rgb(255, 196, 0) !important; color: #f00 !important;}
+.btn_confirm.write_div .btn_submit { 
+    background-color: #f00 !important;
+    border-radius: 30px !important;
+}
+.btn_confirm.write_div .btn_submit:hover { background-color: rgb(255, 196, 0) !important; color: #f00 !important;}
 /* 쓰기 버튼 */
+#bo_w { margin-bottom: 170px;}
 #bo_w .btn_confirm {} /* 서식단계 진행 */
 #bo_w .btn_submit {padding:0 20px}
 #bo_w button.btn_submit {}
@@ -167,7 +177,10 @@ box-shadow: inset 0 2px 5px  rgba(255,255,255,0.3);}
 #bo_list .profile_img img{border-radius:50%}
 #bo_list .cnt_cmt {display:inline-block;margin:0 0 0 3px;font-weight:bold;color:#ed6478;font-size:0.86em}
 
-#bo_sch {float:left;border:1px solid #ccc;border-radius:3px;margin:0 0 20px;background:#fff}
+#bo_sch {
+    float:left;border:1px solid #ccc;border-radius:3px;
+    margin:0 0 170px;
+    background:#fff}
 #bo_sch:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_sch legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
 #bo_sch select{border:0;margin:9px 5px ;height:20px;float:left;border-right:1px solid #ddd;}
@@ -250,12 +263,12 @@ box-shadow: inset 0 2px 5px rgb(33, 135, 202);}
 #bo_v_top {zoom:1}
 #bo_v_top:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_v_top h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
-#bo_v_top ul ;padding:0;list-style:none;word-break:break-all}
+#bo_v_top ul {padding:0;list-style:none;word-break:break-all}
 
 #bo_v_bot {zoom:1}
 #bo_v_bot:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_v_bot h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
-#bo_v_bot ul {;padding:0;list-style:none}
+#bo_v_bot ul {padding:0;list-style:none}
 
 .bo_v_com {margin:20px 0;float:right}
 .bo_v_com li {float:left;margin-left:5px}
@@ -349,7 +362,15 @@ box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);}
 .bo_vc_w_info #captcha{padding-top:10px;display:block;clear:both}
 .bo_vc_w .btn_confirm{float:right;margin-top:10px}
 .bo_vc_w .btn_confirm label{display:inline-block;margin-right:10px;border-radius:3px;font-size:1.5em;text-align:center;}
-.bo_vc_w .btn_submit{height:45px;padding:0 20px;border-radius:3px;font-weight:bold;font-size:1.083em;}
+.bo_vc_w .btn_submit{
+    height:45px;padding:0 20px;border-radius:3px;font-weight:bold;font-size:1.083em;
+    background-color: #f00 !important; 
+    border-radius: 30px !important;
+    transition: all 0.3s;
+}
+.bo_vc_w .btn_submit:hover{ 
+    background-color: rgb(255, 196, 0) !important; color: #f00 !important;
+}
 .bo_vc_w_wr:after {display:block;visibility:hidden;clear:both;content:""}
 
 #bo_vc_send_sns{display:inline-block;float:left}
