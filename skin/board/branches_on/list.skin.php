@@ -153,8 +153,58 @@ add_javascript('<script src="'.$board_skin_url.'/d3.min.js"></script>', 0);
 
     <!-- 페이지 -->
     <?php echo $write_pages;  ?>
-
-
+    <script>
+      /*가맹점 지도 색칠*/
+    $(document).ready(function(){
+      var mapCondition = '<?=$stx?>';
+      var mapCondition2 = '<?=$sca?>';
+      if (mapCondition == '세종특별자치시' || mapCondition2 == '세종특별자치시') {
+        $('#sejong').css("fill", "#f00");
+      }else if (mapCondition =='강원도' || mapCondition2 == '강원도') {
+      $('#gangwon').css("fill", "#f00");
+      }else if (mapCondition == '충청남도' || mapCondition2 == '충청남도') {
+        $('#chungnam').css("fill", "#f00");
+      }else if (mapCondition =='제주특별자치도' || mapCondition2 == '제주특별자치도') {
+        $('#jeju').css("fill", "#f00");
+      }else if (mapCondition =='경상남도' || mapCondition2 == '경상남도') {
+        $('#gyeongnam').css("fill", "#f00");
+      }else if (mapCondition == '경상북도' || mapCondition2 == '경상북도') {
+        $('#gyeongbuk').css("fill", "#f00");
+      }else if (mapCondition =='전라북도' || mapCondition2 == '전라북도') {
+        $('#jeonbuk').css("fill", "#f00");
+      }else if (mapCondition =='충청북도' || mapCondition2 == '충청북도') {
+        $('#chungbuk').css("fill", "#f00");
+      }else if (mapCondition =='경기도' || mapCondition2 == '경기도') {
+        $('#gyeonggi').css("fill", "#f00");
+      }else if (mapCondition == '전라남도' || mapCondition2 == '전라남도') {
+        $('#jeonnam').css("fill", "#f00");
+      }else if (mapCondition =='울산광역시' || mapCondition2 == '울산광역시') {
+        $('#ulsan').css("fill", "#f00");
+      }else if (mapCondition =='부산광역시' || mapCondition2 == '부산광역시') {
+        $('#busan').css("fill", "#f00");
+      }else if (mapCondition == '대구광역시' || mapCondition2 == '대구광역시') {
+        $('#daegu').css("fill", "#f00");
+      }else if (mapCondition =='대전광역시' || mapCondition2 == '대전광역시') {
+        $('#daejeon').css("fill", "#f00");
+      }else if (mapCondition =='인천광역시' || mapCondition2 == '인천광역시') {
+        $('#incheon').css("fill", "#f00");
+      }else if (mapCondition =='서울특별시' || mapCondition2 == '서울특별시') {
+        $('#seoul').css("fill", "#f00");
+      }else if (mapCondition =='광주광역시' || mapCondition2 == '광주광역시') {
+        $('#gwangju').css("fill", "#f00");
+      }
+      });
+    </script>
+    <script>
+      function go_branch(city_do) {
+          var Arr = Array("sejong","chungnam","jeju","gyeongnam","gyeongbuk","jeonbuk","chungbuk","gangwon","gyeonggi","jeonnam","ulsan","busan","daegu","daejeon","incheon","seoul","gwangju");
+          var strArr = Array("세종특별자치시","충청남도","제주특별자치도","경상남도","경상북도","전라북도","충청북도","강원도","경기도","전라남도","울산광역시","부산광역시","대구광역시","대전광역시","인천광역시","서울특별시","광주광역시");
+          //alert(city_do);
+          var idx = Arr.indexOf(city_do);
+          //alert(strArr[idx]);
+          location.href="./board.php?bo_table=<?php echo $bo_table; ?>&sca="+strArr[idx];
+        }
+    </script>
     <?php if ($is_checkbox) { ?>
     <script>
       function all_checked(sw) {
@@ -232,55 +282,7 @@ add_javascript('<script src="'.$board_skin_url.'/d3.min.js"></script>', 0);
           var _path = event.target;
           d3.select(_path).style("fill", "#fff");
         });
-
-        function go_branch(city_do) {
-          var Arr = Array("sejong","chungnam","jeju","gyeongnam","gyeongbuk","jeonbuk","chungbuk","gangwon","gyeonggi","jeonnam","ulsan","busan","daegu","daejeon","incheon","seoul","gwangju");
-          var strArr = Array("세종특별자치시","충청남도","제주특별자치도","경상남도","경상북도","전라북도","충청북도","강원도","경기도","전라남도","울산광역시","부산광역시","대구광역시","대전광역시","인천광역시","서울특별시","광주광역시");
-          //alert(city_do);
-          var idx = Arr.indexOf(city_do);
-          //alert(strArr[idx]);
-          location.href="./board.php?bo_table=branches&sca="+strArr[idx];
-        }
-
-        /*가맹점 지도 색칠*/
-        $(document).ready(function(){
-          var mapCondition = '<?=$stx?>';
-          var mapCondition2 = '<?=$sca?>';
-          if (mapCondition == '세종특별자치시' || mapCondition2 == '세종특별자치시') {
-            $('#sejong').css("fill", "#cbc3ac");
-          }else if (mapCondition == '충청남도' || mapCondition2 == '충청남도') {
-            $('#chungnam').css("fill", "#cbc3ac");
-          }else if (mapCondition =='제주특별자치도' || mapCondition2 == '제주특별자치도') {
-            $('#jeju').css("fill", "#cbc3ac");
-          }else if (mapCondition =='경상남도' || mapCondition2 == '경상남도') {
-            $('#gyeongnam').css("fill", "#cbc3ac");
-          }else if (mapCondition == '경상북도' || mapCondition2 == '경상북도') {
-            $('#gyeongbuk').css("fill", "#cbc3ac");
-          }else if (mapCondition =='전라북도' || mapCondition2 == '전라북도') {
-            $('#jeonbuk').css("fill", "#cbc3ac");
-          }else if (mapCondition =='충청북도' || mapCondition2 == '충청북도') {
-            $('#chungbuk').css("fill", "#cbc3ac");
-          }else if (mapCondition =='경기도' || mapCondition2 == '경기도') {
-            $('#gyeonggi').css("fill", "#cbc3ac");
-          }else if (mapCondition == '전라남도' || mapCondition2 == '전라남도') {
-            $('#jeonnam').css("fill", "#cbc3ac");
-          }else if (mapCondition =='울산광역시' || mapCondition2 == '울산광역시') {
-            $('#ulsan').css("fill", "#cbc3ac");
-          }else if (mapCondition =='부산광역시' || mapCondition2 == '부산광역시') {
-            $('#busan').css("fill", "#cbc3ac");
-          }else if (mapCondition == '대구광역시' || mapCondition2 == '대구광역시') {
-            $('#daegu').css("fill", "#cbc3ac");
-          }else if (mapCondition =='대전광역시' || mapCondition2 == '대전광역시') {
-            $('#daejeon').css("fill", "#cbc3ac");
-          }else if (mapCondition =='인천광역시' || mapCondition2 == '인천광역시') {
-            $('#incheon').css("fill", "#cbc3ac");
-          }else if (mapCondition =='서울특별시' || mapCondition2 == '서울특별시') {
-            $('#seoul').css("fill", "#cbc3ac");
-          }else if (mapCondition =='광주광역시' || mapCondition2 == '광주광역시') {
-            $('#gwangju').css("fill", "#cbc3ac");
-          }
-      });
-    </script>
+    </script>]
   <?php } ?>
 </div>
-<!-- } 게시판 목록 끝 -->
+<!-- 게시판 목록 끝 -->

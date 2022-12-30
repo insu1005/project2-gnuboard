@@ -53,7 +53,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     <a href="/sub/sub3-1.php">매장찾기</a>
                     <ul class="depth2">
                         <li><a href="/sub/sub3-1.php">신규오픈</a></li>
-                        <li><a href="#">매장찾기</a></li>
+                        <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=free">매장찾기</a></li>
                         <li><a href="#">우수매장</a></li>
                     </ul>
                 </li>
