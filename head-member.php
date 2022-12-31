@@ -23,7 +23,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             <h2 class="hidden">메인메뉴</h2>
             <ul>
                 <li class="depth1">
-                    <a href="#">브랜드</a>
+                    <a href="/sub/sub1-1.php">브랜드</a>
                     <ul class="depth2">
                         <li><a href="/sub/sub1-1.php">브랜드 소개</a></li>
                         <li><a href="/sub/sub1-2.php">회사소개</a></li>
@@ -31,40 +31,40 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     </ul>
                 </li>
                 <li class="depth1">
-                    <a href="#">메뉴</a>
+                    <a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=newmenu">메뉴</a>
                     <ul class="depth2">
-                        <li><a href="#">신메뉴</a></li>
-                        <li><a href="#">반미터 피자</a></li>
-                        <li><a href="#">클래식 쌀피자</a></li>
-                        <li><a href="#">프리미엄 쌀피자</a></li>
-                        <li><a href="#">세트/사이드</a></li>
+                        <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=newmenu">신메뉴</a></li>
+                        <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=halfmeter">반미터 피자</a></li>
+                        <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=classicpizza">클래식 쌀피자</a></li>
+                        <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=premiumpizza">프리미엄 쌀피자</a></li>
+                        <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=setside">세트/사이드</a></li>
                     </ul>
                 </li>
                 <li class="depth1">
-                    <a href="#">매장찾기</a>
+                    <a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=marketsearch">매장찾기</a>
                     <ul class="depth2">
-                        <li><a href="#">신규오픈</a></li>
-                        <li><a href="#">매장찾기</a></li>
-                        <li><a href="#">우수매장</a></li>
+                        <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=open">신규오픈</a></li>
+                        <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=marketsearch">매장찾기</a></li>
+                        <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=bestmarket">우수매장</a></li>
                     </ul>
                 </li>
                 <li class="depth1">
-                    <a href="#">창업</a>
+                    <a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=counsel">창업</a>
                     <ul class="depth2">
                         <li><a href="/sub/sub4-1.php">브랜드 경쟁력</a></li>
                         <li><a href="/sub/sub4-2.php">성공 스토리</a></li>
                         <li><a href="/sub/sub4-3.php">창업 및 비용</a></li>
-                        <li><a href="#">가맹문의</a></li>
+                        <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=counsel">가맹문의</a></li>
                     </ul>
                 </li>
                 <li class="depth1">
-                    <a href="#">커뮤니티</a>
+                    <a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=gallery">커뮤니티</a>
                     <ul class="depth2">
-                        <li><a href="#">이벤트</a></li>
+                        <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=gallery">이벤트</a></li>
                         <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=notice">공지사항</a></li>
-                        <li><a href="#">MEDIA</a></li>
-                        <li><a href="#">고객의 소리</a></li>
-                        <li><a href="#">점주게시판</a></li>
+                        <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=MEDIA">MEDIA</a></li>
+                        <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=customer">고객의 소리</a></li>
+                        <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=boss">점주게시판</a></li>
                     </ul>
                 </li>
             </ul>

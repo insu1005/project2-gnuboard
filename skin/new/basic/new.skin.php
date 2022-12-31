@@ -9,7 +9,7 @@ if ($is_admin) $colspan++;
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$new_skin_url.'/style.css">', 0);
 ?>
-
+<div class="inner justfix">
 <!-- 전체게시물 검색 시작 { -->
 <fieldset id="new_sch">
     <legend>상세검색</legend>
@@ -152,4 +152,5 @@ function fnew_submit(f)
 }
 </script>
 <?php } ?>
+</div>
 <!-- } 전체게시물 목록 끝 -->

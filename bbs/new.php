@@ -2,7 +2,7 @@
 include_once('./_common.php');
 
 $g5['title'] = '새글';
-include_once('./_head.php');
+include_once('./_head-search.php');
 
 $sql_common = " from {$g5['board_new_table']} a, {$g5['board_table']} b, {$g5['group_table']} c where a.bo_table = b.bo_table and b.gr_id = c.gr_id and b.bo_use_search = 1 ";
 
@@ -112,4 +112,4 @@ $write_pages = get_paging(G5_IS_MOBILE ? $config['cf_mobile_pages'] : $config['c
 
 include_once($new_skin_path.'/new.skin.php');
 
-include_once('./_tail.php');
+include_once('./_tail-member.php');
