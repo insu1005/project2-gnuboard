@@ -23,7 +23,7 @@ include_once(G5_PATH.'/head.php');
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="#">
+                            <a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=newmenu&wr_id=28&sst=wr_num%2Cwr_reply&page=1">
                                 <p><strong>킹새우통치킨피자</strong>는<br>
                                 특제 필리소르로 맛을 낸 킹새우와<br> 
                                 칠리소스 통치킨이 가득!</p>
@@ -35,7 +35,7 @@ include_once(G5_PATH.'/head.php');
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#">
+                            <a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=newmenu&wr_id=26&sst=wr_num%2Cwr_reply&page=1">
                                 <p><strong>통치킨오믈렛피자</strong>는<br>
                                     매콤 바삭 통치킨볼과 부드러운<br>
                                     오믈렛이 가득!</p>
@@ -46,7 +46,7 @@ include_once(G5_PATH.'/head.php');
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#">
+                            <a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=newmenu&wr_id=27&sst=wr_num%2Cwr_reply&page=1">
                                 <p><strong>통옥수수오믈렛피자</strong>는<br>
                                     톡톡 터지는 통옥숫수에 부드러운 오믈렛<br>
                                     베이컨과 콘마요의 완벽한 조호의 맛!
@@ -57,7 +57,7 @@ include_once(G5_PATH.'/head.php');
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#">
+                            <a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=newmenu&wr_id=24&sst=wr_num%2Cwr_reply&page=1">
                                 <p><strong>달콤채식피자</strong>는<br>
                                     육류토핑 없이 ! 고구마무스, 감자샐러드,<br>
                                     단호박샐러드, 크림치즈, 야채토핑으로 화려하게!
@@ -73,7 +73,7 @@ include_once(G5_PATH.'/head.php');
                 <div class="swiper mySwiper2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="#">
+                            <a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=newmenu&wr_id=28&sst=wr_num%2Cwr_reply&page=1">
                                 <figure class="content">
                                     <div class="move">
                                         <img src="/img/shrimp-pizza.png" alt="새콤달콤 킹새우통치킨피자 오구오구 어여오세요~~!">
@@ -87,7 +87,7 @@ include_once(G5_PATH.'/head.php');
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#">
+                            <a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=newmenu&wr_id=26&sst=wr_num%2Cwr_reply&page=1">
                                 <figure class="content">
                                     <div class="move">
                                         <img src="/img/omulet-pizaa.png" alt="통통한 치킨살 한~~가득!! 통치킨오믈렛피자">
@@ -101,7 +101,7 @@ include_once(G5_PATH.'/head.php');
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#">
+                            <a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=newmenu&wr_id=27&sst=wr_num%2Cwr_reply&page=1">
                                 <figure class="content">
                                     <div class="move">
                                         <img src="/img/corn-pizza.png" alt="부드럽고 담백한 통옥수수오믈렛피자!!">
@@ -115,7 +115,7 @@ include_once(G5_PATH.'/head.php');
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#">
+                            <a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=newmenu&wr_id=24&sst=wr_num%2Cwr_reply&page=1">
                                 <figure class="content">
                                     <div class="move">
                                         <img src="/img/vegetable.png" alt="건강을 생각한다면 역쉬!! 역쉬!! 달콤채식피자! 건강과 맛 둘다 함께!!">
