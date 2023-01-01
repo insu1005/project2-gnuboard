@@ -2,7 +2,7 @@
 /* SIR 지운아빠 */
 
 /* ### 기본 스타일 커스터마이징 시작 ### */
-
+.justfix { margin-bottom: 170px !important;}
 /* 게시판 버튼 */
 /* 목록 버튼 */
 #bo_gall a.btn_b01 {}

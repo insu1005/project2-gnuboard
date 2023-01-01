@@ -282,7 +282,7 @@ add_javascript('<script src="'.$board_skin_url.'/d3.min.js"></script>', 0);
           var _path = event.target;
           d3.select(_path).style("fill", "#fff");
         });
-    </script>]
+    </script>
   <?php } ?>
 </div>
 <!-- 게시판 목록 끝 -->

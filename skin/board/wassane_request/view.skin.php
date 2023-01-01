@@ -29,14 +29,21 @@ if ($is_admin && ($prev_href || $next_href)) {
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
 <div class="inner">
     <div class="wrap">
-        <h1 class="title_type1">상담문의</h1>
+        <h3 class="title_type1">상담문의</h3>
         <div class="cont-type1 cont_request">
             <div class="row mt20">
-                <div class="div_left btn_left left">
+                <div class="row-description cleafix">
+                    <div class="description-box">
+                        <h4>안녕하세요! 여러분 오구쌀피자와 함께하는 상담문의 입니다!</h4>
+                        <strong>여러분들의 고민사항들 오구오구 해결해드립니다!</strong>
+                        <p>지금 오구쌀 미래의 사장님들의 사항들을 파악하고 있습니다.<br>신중하고 깊게 여러분들을 생각하는 마음이 바로 여기 있습니다. <br> 사항들을 숙지한 후 바로 연락드리겠습니다.</p>
+                    </div>
+                </div>
+                <div class="div_left btn_left left hidden">
                     <?php echo $nav_buttons; ?>
                 </div>
-                <div class="div_right right">
-                    <?php if ($write_href) { ?><a href="<?php echo $write_href ?>" class="btn_red btn_lg">오구쌀과의 상담</a><?php } ?>
+                <div class="div_right right go description-right">
+                    <?php if ($write_href) { ?><a href="<?php echo $write_href ?>" class="btn_red btn_lg go"><span>오구쌀 피자와<br> 함께하기</span><span>GO</span></a><?php } ?>
                 </div>
             </div>
             <table>

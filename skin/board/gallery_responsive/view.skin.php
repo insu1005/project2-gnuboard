@@ -14,7 +14,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 
 
-
+<div class="inner justfix">
             <div>
                 <ul class="titles font-b font-18"><?php echo cut_str(get_text($view['wr_subject']), 999); ?></ul>
                 <ul class="main_lists_date v_top_hd">
@@ -157,6 +157,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 <?php
 include_once(G5_BBS_PATH.'/view_comment.php');
 ?>
+</div>
 </div>
 
 <script>

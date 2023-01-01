@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+.justfix { margin-bottom: 170px !important;}
 /* 게시판 버튼 */
 /* 목록 버튼 */
 #bo_list a.btn_b01 {}

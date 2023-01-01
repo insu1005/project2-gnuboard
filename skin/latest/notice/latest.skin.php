@@ -12,7 +12,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
     <img src="/img/smallhouse.png" alt="오구쌀피자가 보여주는 이벤트!">
     <ul class="event-list">
     <?php for ($i=0; $i<$list_count; $i++) {  ?>
-        <li>
+        <li class="effect">
             <?php
             if ($list[$i]['icon_secret']) echo "<span class=\"lock_icon\"><i class=\"fa fa-lock\" aria-hidden=\"true\"></i></span> ";
             if ($list[$i]['icon_new']) echo "<span class=\"new_icon\">N<span class=\"sound_only\">새글</span></span>";
@@ -23,10 +23,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
             else
                 echo $list[$i]['subject'];
 
-            if ($list[$i]['comment_cnt'])
-                echo $list[$i]['comment_cnt'];
-
-            echo "</a>";
+            if ($list[$i]['comment_cnt']);
 
             // if ($list[$i]['link']['count']) { echo "[{$list[$i]['link']['count']}]"; }
             // if ($list[$i]['file']['count']) { echo "<{$list[$i]['file']['count']}>"; }

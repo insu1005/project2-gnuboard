@@ -19,7 +19,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 <!-- } -->
 
 
-<div>
+<div class="inner justfix">
         <div class="cate_div">
             <?php if ($is_category) { ?>
             <style>

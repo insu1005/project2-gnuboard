@@ -5,7 +5,7 @@ div.notice {
     box-sizing: border-box;
     float: left;
     width: 655px; height: 430px;
-    margin-top: 23px; padding: 48px 38px 0;
+    margin-top: 48px; padding: 48px 38px 0;
     border: 5px solid #000; border-radius: 60px 60px 0 0;
     position: relative;
 }
@@ -40,7 +40,7 @@ div.notice {
 /* .notice li .lock_icon {display:inline-block;line-height:14px;width:16px;font-size:0.833em;color:#4f818c;background:#cbe3e8;text-align:center;border-radius:2px;font-size: 12px;border:1px solid #a2c6ce;vertical-align:baseline} */
 /* .notice li .new_icon {display:inline-block;line-height:16px;width:16px;font-size:0.833em;color:#ffff00;background:#6db142;text-align:center;margin-right:3px;border-radius:2px;vertical-align:baseline} */
 .notice .cnt_cm {background:#5c85c1;color:#fff;font-size:11px;height:16px;line-height:16px;padding:0 5px;border-radius:3px;white-space:nowrap;margin-left:5px}
-.notice li.empty_li {border-bottom:0;line-height:120px}
+.notice li.empty_li {border-bottom:0;line-height:120px; transform: translateX(60px);}
 .notice.ft_cnt .event-more {
     font-size: 18px; line-height: 22px;
     position: absolute; right: 100px; top: 50px;
@@ -57,3 +57,4 @@ div.notice {
 .notice li:hover::before {opacity: 1;}
 .event-more:hover { font-weight: 800; color:#e02d3c}
 .event-more:hover::after {transform: rotate(45deg);}
+.event-list .empty_li { }

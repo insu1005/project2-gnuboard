@@ -30,7 +30,7 @@ $lat = 36.4965569936987; // 초기 및 리셋 중심좌표
 $lng = 127.242297055683; // 초기 및 리셋 중심좌표
 ?>
 
-
+<div class="inner justfix">
 <div id="map" style="width: 100%; height: 400px; margin:0px; border-radius:4px;"></div>
 
 <!-- {
@@ -526,4 +526,5 @@ kakao Api / JavaScript 키 필요
     });
 </script>
 <?php } ?>
+</div>
 <!-- } 게시판 목록 끝 -->

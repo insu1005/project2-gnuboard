@@ -9,9 +9,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
 
 <!-- 게시물 읽기 시작 { -->
-
+<div class="inner justfix">
 <article id="bo_v" style="width:<?php echo $width; ?>">
-    <header>
+    <div>
 
         <div class="info_left">
             <h2 id="bo_v_title">
@@ -60,7 +60,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <div style="clear:both"></div>
 
 
-    </header>
+    </div>
 
 
 
@@ -243,6 +243,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     include_once(G5_BBS_PATH.'/view_comment.php');
 	?>
 </article>
+</div>
 <!-- } 게시판 읽기 끝 -->
 
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0a7f81f42fff246ceeb1efb3aebf1582

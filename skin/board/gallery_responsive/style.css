@@ -5,7 +5,7 @@ p {
     margin-top: 0;
     margin-bottom: 0 !important;
 }
-
+.justfix{ margin: 142px auto 170px !important;}
 
 /* 게시판 버튼 */
 /* 목록 버튼 */
