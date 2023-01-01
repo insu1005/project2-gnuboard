@@ -98,24 +98,69 @@
 /* identity -e */
 
 /* interior -s */
+.interior-wrap { position: relative;}
+.interior-wrap::before {content: "";
+    width: 250px; height: 20px;
+    background-color: #d4261f;
+    position: absolute; left: 155px; top: 140px;
+    animation: left 1.6s infinite;
+}
+.interior-wrap::after {content: "";
+    width: 250px; height: 20px;
+    background-color: #d4261f;
+    position: absolute; right: 170px; top: 140px;
+    animation: right 1.6s infinite;
+}
 .interior-wrap img { 
     display: block;
     width: 460px; height: 274px;
     margin: 0 auto 40px; 
+    position: relative;
+}
+.interior-description {
+    padding: 20px 0; 
+    background: url(/img/sub-img/stren-bg.png);
+    position: relative;
+}
+.interior-description::before{ content: "";
+    width: 268px; height: 262px;
+    background-image: url( /img/smallhouse.png);
+    position: absolute; top: 110px; right: 70px;
+}
+.interior-description::after { content: "";
+    width: 159px; height: 137px;
+    background-image: url(/img/rocket-other.png);
+    position: absolute; top: -70px; right: 30px;
+    animation: flying 1.8s infinite;
 }
 .interior-description strong { 
     display: block;
-    margin-bottom: 34px;
-    font-weight: 400; line-height: 34px; color: #555;
+    margin: 30px 0 34px 30px;
+    font-weight: 400; line-height: 34px; color: #111;
 }
 .interior-description em {
     display: block; 
-    margin-bottom: 34px;
-    font-weight: 400; line-height: 34px; color: #555;
+    margin: 0 0 34px 30px;
+    font-weight: 400; line-height: 34px; color: #333;
 }
 .interior-description p { 
-    margin-bottom: 34px;
+    margin: 0 0 34px 30px;
     font-weight: 400; line-height: 34px; color: #555;
+}
+@keyframes flying { 
+    0% { transform: translateY(0);}
+    50% { transform: translateY(-50px);}
+    100%{ transform: translateY(0);}
+}
+@keyframes left {
+    0% { transform: translateX(0);}
+    50% { transform: translateX(-50px);}
+    100%{ transform: translateX(0);}
+}
+@keyframes right {
+    0% { transform: translateX(0);}
+    50% { transform: translateX(50px);}
+    100%{ transform: translateX(0);}
 }
 /* interior -e */
 /* sub1-1 -e */
