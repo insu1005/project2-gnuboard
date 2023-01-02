@@ -189,6 +189,10 @@
 /* interview sec -s */
 .interview { padding-top: 0;}
 .video-box {width: 320px; height: 295px;}
+.interview-wrap { 
+  margin: 0 auto;
+  width: 1160px; height: 420px;
+}
 .interview-box { 
   float: left;
   position: relative;
@@ -387,6 +391,10 @@ input::placeholder { font-size: 30px; line-height: 43px; color:#777; text-align:
 
 /* community sec -s */
 .community { padding-top: 0;}
+.commnity-wrap { 
+  margin: 0 auto;
+  width: 1216px; height: 567px;
+}
 .hot-event { 
   float: left;
   margin-right: 157px;
