@@ -35,7 +35,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         -->
         <div class="cm_wrap">
 
-            <header style="z-index:<?php echo $cmt_sv; ?>">
+            <div style="z-index:<?php echo $cmt_sv; ?>">
                 <h2><?php echo get_text($list[$i]['wr_name']); ?>님의 <?php if ($cmt_depth) { ?><span class="sound_only">댓글의</span><?php } ?> 댓글</h2>
                 <?php echo $list[$i]['name'] ?>
                 <!--
@@ -49,7 +49,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 <?php
 	            include(G5_SNS_PATH.'/view_comment_list.sns.skin.php');
 	            ?>
-            </header>
+            </div>
 
             <!-- 댓글 출력 -->
             <div class="cmt_contents divmt-10">

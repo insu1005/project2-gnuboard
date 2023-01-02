@@ -152,7 +152,9 @@ add_javascript('<script src="'.$board_skin_url.'/d3.min.js"></script>', 0);
     <?php } ?>
 
     <!-- 페이지 -->
+    <div class="up">
     <?php echo $write_pages;  ?>
+    </div>
     <script>
       /*가맹점 지도 색칠*/
     $(document).ready(function(){
