@@ -37,6 +37,10 @@
     background-color: #d4261f;
     color: #ff0;
 }
+.lnb li.on a{
+    background-color: #d4261f;
+    color: #ff0;
+}
 /* lnb -E */
 .sub-tit{ 
     margin-bottom: 25px;

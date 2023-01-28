@@ -6,6 +6,12 @@ if (!defined('_GNUBOARD_')) exit;
 
 include_once(G5_PATH.'/head-sub-4.php');
 ?>
+<script>
+    $(function(){
+        $(".lnb li").removeClass();
+        $(".lnb li").eq(0).addClass('on')
+    })
+</script>
 <section class="sub-common sub4-1">
     <div class="inner">
         <article class="regular strength">

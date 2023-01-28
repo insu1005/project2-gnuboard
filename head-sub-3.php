@@ -91,13 +91,13 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <!-- 콘텐츠 시작 { -->
     <main>
-    <div class="visual">
+        <div class="visual">
             <div class="inner">매장찾기</div>
         </div>
         <div class="lnb">
             <div class="inner">
                    <ul class="lnb-list">
-                      <li class="on"><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=open">신규오픈</a></li>
+                      <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=open">신규오픈</a></li>
                       <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=marketsearch">매장찾기</a></li>
                       <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=bestmarket">우수매장</a></li>
                    </ul>

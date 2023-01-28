@@ -91,13 +91,13 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <!-- 콘텐츠 시작 { -->
     <main>
-    <div class="visual">
+        <div class="visual">
             <div class="inner">메뉴</div>
         </div>
         <div class="lnb">
             <div class="inner">
                    <ul class="lnb-list">
-                      <li class="on"><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=newmenu">신메뉴</a></li>
+                      <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=newmenu">신메뉴</a></li>
                       <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=halfmeter">반미터 피자</a></li>
                       <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=classicpizza">클래식 쌀피자</a></li>
                       <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=premiumpizza">프리미엄 쌀피자</a></li>

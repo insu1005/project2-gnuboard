@@ -97,7 +97,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         <div class="lnb">
             <div class="inner">
                    <ul class="lnb-list">
-                      <li class="on"><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=gallery">이벤트</a></li>
+                      <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=gallery">이벤트</a></li>
                       <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=notice">공지사항</a></li>
                       <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=MEDIA">MEDIA</a></li>
                       <li><a href="http://insu1006.dothome.co.kr/bbs/board.php?bo_table=customer">고객의 소리</a></li>

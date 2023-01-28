@@ -91,13 +91,13 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <!-- 콘텐츠 시작 { -->
     <main>
-    <div class="visual">
+        <div class="visual">
             <div class="inner">브랜드</div>
         </div>
         <div class="lnb">
             <div class="inner">
                    <ul class="lnb-list">
-                      <li class="on"><a href="/sub/sub1-1.php">브랜드 소개</a></li>
+                      <li><a href="/sub/sub1-1.php">브랜드 소개</a></li>
                       <li><a href="/sub/sub1-2.php">회사소개</a></li>
                       <li><a href="/sub/sub1-3.php">오시는 길</a></li>
                    </ul>
