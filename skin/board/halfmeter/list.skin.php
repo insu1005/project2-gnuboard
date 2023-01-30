@@ -6,7 +6,12 @@ include_once(G5_LIB_PATH.'/thumbnail.lib.php');
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
 
-
+<script>
+    $(function(){
+        $(".lnb li").removeClass();
+        $(".lnb li").eq(1).addClass('on')
+    })
+</script>
 <!-- 게시판 목록 시작 { -->
 <div class="inner">
 <div id="bo_gall" style="width:<?php echo $width; ?>">

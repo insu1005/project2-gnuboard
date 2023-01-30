@@ -33,6 +33,14 @@ switch($wr_4) { // 회원구분 (0:일반회원, 1:계약회원)
 if(!$wr_name) $wr_name = $member['mb_name']; // 이름
 
 ?>
+
+<script>
+    $(function(){
+        $(".lnb li").removeClass();
+        $(".lnb li").eq(3).addClass('on')
+    })
+</script>
+
 <div class="inner">
     <div class="wrap">
         <h2 class="title_type1"><?php echo $g5['title'] ?></h2>

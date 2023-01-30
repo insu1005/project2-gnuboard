@@ -166,6 +166,14 @@ kakao Api / JavaScript 키 필요
 ?>
 </script>
 
+<script>
+    $(function(){
+        $(".lnb li").removeClass();
+        $(".lnb li").eq(0).addClass('on')
+    })
+</script>
+
+
 
 <!-- 게시판 목록 시작 { -->
 <div id="bo_list" style="width:<?php echo $width; ?>">

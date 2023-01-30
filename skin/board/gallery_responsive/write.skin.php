@@ -10,6 +10,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 <link rel="stylesheet" href="<?php echo $board_skin_url ?>/css/magic-check.css">
 <!-- } -->
 
+<script>
+    $(function(){
+    $(".lnb li").removeClass();
+    $(".lnb li").eq(2).addClass('on')
+    })
+</script>
 
 <div class="inner justfix">
 <form name="fwrite" id="fwrite" action="<?php echo $action_url ?>" onsubmit="return fwrite_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off" style="width:<?php echo $width; ?>">

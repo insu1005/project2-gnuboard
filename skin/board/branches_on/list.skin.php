@@ -15,6 +15,15 @@ add_javascript('<script src="'.$board_skin_url.'/d3.min.js"></script>', 0);
 <!-- <h2 id="container_title"><?php echo $board['bo_subject'] ?><span class="sound_only"> 목록</span></h2>==?
 
 <!-- 게시판 목록 시작 { -->
+
+  <script>
+    $(function(){
+        $(".lnb li").removeClass();
+        $(".lnb li").eq(1).addClass('on')
+    })
+</script>
+
+
 <div class="inner">
   <div id="bo_list" style="width:<?php echo $width; ?>">
 

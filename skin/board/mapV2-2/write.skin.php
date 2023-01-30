@@ -9,6 +9,15 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 if($write['wr_5'] == null){$write['wr_5'] =  37.566400714093284;}
 if($write['wr_6'] == null){$write['wr_6'] = 126.9785391897507;}
 ?>
+
+<script>
+    $(function(){
+        $(".lnb li").removeClass();
+        $(".lnb li").eq(0).addClass('on')
+    })
+</script>
+
+
 <div class="inner justfix">
 <section id="bo_w">
     <h2 class="sound_only"><?php echo $g5['title'] ?></h2>

@@ -8,6 +8,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
 
+<script>
+    $(function(){
+        $(".lnb li").removeClass();
+        $(".lnb li").eq(3).addClass('on')
+    })
+</script>
+
+
 <!-- 게시물 읽기 시작 { -->
 <div class="inner">
 <article id="bo_v" style="width:<?php echo $width; ?>">

@@ -29,14 +29,14 @@
 .box-wrap-regular{ 
     float: left;
     box-sizing: border-box;
-    width: 690px;
     padding-top: 50px;
+    width: 690px;
 }
 .box-wrap:nth-child(2) .box-wrap-regular{ 
     float: left;
     box-sizing: border-box;
-    width: 620px;
     padding-left: 60px;
+    width: 620px;
 }
 .box-wrap:nth-child(2) .box-wrap-regular .box-wrap-tit strong { font-weight: 800; color: #ff6101;}
 .box-wrap:nth-child(2) .box-wrap-regular .box-wrap-tit em { font-weight: 800; font-size: 45px; color: #e02d3c;}
@@ -69,22 +69,21 @@
 .identity-common:nth-child(2) {margin-bottom: 52px;}
 .identity-tit { 
     float: left;
-    width: 310px; height: 111px;
     margin-right: 115px;
+    width: 310px; height: 111px;
     font-weight: 700; font-size: 45px; line-height: 111px; color:#555;
 }
 .identity-common img {float: left;}
 .identity-common p {
     float: left;
     margin-right: 70px;
-    text-align: center;
-    font-size: 24px; line-height: 28px; color: #555;
+    font-size: 24px; line-height: 28px; color: #555; text-align: center;
 }
 .identity-common p::before {content:"";
     display: block;
+    margin-bottom: 15px;
     width: 200px; height: 80px;
     background-color: #d4261f;
-    margin-bottom: 15px;
 }
 .identity-common p:nth-child(2):before{
     background-color: #f39800;
@@ -128,8 +127,7 @@
 .sub-description > strong { font-weight: 800; color: #d4261f;}
 .company-brand { 
     box-sizing: border-box;
-    padding: 142px 130px 0;
-    margin-bottom: 50px;
+    margin-bottom: 50px; padding: 142px 130px 0;
 }
 .company-brand img:first-child { 
     float: left;
@@ -187,11 +185,11 @@
 }
 .location-detail {
     box-sizing: border-box;
-    width: 900px; height: 100px;
     margin: 0 auto 170px; padding: 40px 0 0 85px;
+    width: 900px; height: 100px;
+    border-radius: 35px;
     color: #fff;
     background-color: #ff6101;
-    border-radius: 35px;
 }
 .location-detail p { 
     float: left;
@@ -259,12 +257,12 @@
 }
 .bus-direction li strong {
     box-sizing: border-box;
-    margin-right: 5px; padding-top: 5px;
     display: inline-block;
+    margin-right: 5px; padding-top: 5px;
     width: 40px; height: 30px;
     border-radius: 30px;
-    background-color: rgb(27, 135, 237);
     color: #fff; text-align: center;
+    background-color: rgb(27, 135, 237);
 }
 .bus-direction .line-2 .line-2-common { background-color: #86ff1d;}
 .bus-direction .line-3 strong { background-color: #1dd6ff;}

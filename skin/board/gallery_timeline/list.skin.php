@@ -63,6 +63,15 @@ function remove_tag($str, $remove_tags) {
 
 
     <!-- 게시판 페이지 정보 및 버튼 시작 { -->
+
+	<script>
+		$(function(){
+		$(".lnb li").removeClass();
+		$(".lnb li").eq(0).addClass('on')
+		})
+	</script>
+
+
 <div class="inner clearfix">
 	<div id="bo_btn_top">
         <div id="bo_list_total">

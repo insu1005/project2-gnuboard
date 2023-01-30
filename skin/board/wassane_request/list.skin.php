@@ -16,6 +16,14 @@ echo '<link rel="stylesheet" href="'.$board_skin_url.'/style.css">';
 echo '<link rel="stylesheet" href="'.$board_skin_url.'/responsive.css">';
 
 ?>
+
+<script>
+    $(function(){
+        $(".lnb li").removeClass();
+        $(".lnb li").eq(3).addClass('on')
+    })
+</script>
+
 <div class="inner">
 <div class="wrap">
     <h2 class="title_type1"><?php echo $board['bo_subject'] ?><span class="sound_only"><?php echo $board['bo_subject'] ?></span></h2>

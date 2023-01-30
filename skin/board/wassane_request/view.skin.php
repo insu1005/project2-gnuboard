@@ -27,6 +27,14 @@ if ($is_admin && ($prev_href || $next_href)) {
 ?>
 
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
+
+<script>
+    $(function(){
+        $(".lnb li").removeClass();
+        $(".lnb li").eq(3).addClass('on')
+    })
+</script>
+
 <div class="inner">
     <div class="wrap">
         <h3 class="title_type1">상담문의</h3>

@@ -23,6 +23,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 <!-- 게시물 읽기 시작 { -->
 
 <script>
+    $(function(){
+    $(".lnb li").removeClass();
+    $(".lnb li").eq(2).addClass('on')
+    })
+</script>
+
+
+<script>
     function funLoad(){
         var Cheight = $(window).height()-130;
         $('.img_conv').css({'height':Cheight+'px'});

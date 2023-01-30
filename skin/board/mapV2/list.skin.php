@@ -2,6 +2,7 @@
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 include_once(G5_LIB_PATH.'/thumbnail.lib.php');
 
+
 // 검색 추가 @뒷고기잘구움 님 도움 주셨습니다. { 
 function get_board_sfl_select_options2($sfl){
     global $is_admin;
@@ -164,6 +165,14 @@ kakao Api / JavaScript 키 필요
 }
 
 ?>
+</script>
+
+
+<script>
+    $(function(){
+        $(".lnb li").removeClass();
+        $(".lnb li").eq(2).addClass('on')
+    })
 </script>
 
 

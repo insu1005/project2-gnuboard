@@ -5,10 +5,22 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 
+
+
+
 //새글 작성일때 기본좌표
 if($write['wr_5'] == null){$write['wr_5'] =  37.566400714093284;}
 if($write['wr_6'] == null){$write['wr_6'] = 126.9785391897507;}
 ?>
+
+
+<script>
+    $(function(){
+        $(".lnb li").removeClass();
+        $(".lnb li").eq(2).addClass('on')
+    })
+</script>
+
 <div class="inner justfix">
 <section id="bo_w">
     <h2 class="sound_only"><?php echo $g5['title'] ?></h2>
