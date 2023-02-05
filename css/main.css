@@ -391,8 +391,8 @@ input::placeholder { font-size: 30px; line-height: 43px; color:#777; text-align:
 /* community sec -s */
 .community { padding-top: 0;}
 .commnity-wrap { 
-  margin: 0 auto;
   width: 1216px; height: 567px;
+  margin: 0 auto;
 }
 .hot-event { 
   float: left;
