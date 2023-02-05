@@ -7,9 +7,7 @@
     width: 100%; height: 380px; min-width: 1280px;
     background-repeat:  no-repeat; background-position: center center;
 }
-.visual .inner{ 
-    font: 700 60px/221px "nanumsquare"; color: #fff; text-align: center;
-}
+.visual .inner{ font: 700 60px/221px "nanumsquare"; color: #fff; text-align: center; }
 /* visual -E */
 
 /* lnb -S */
@@ -34,12 +32,12 @@
 .lnb .lnb-list li:first-child a {border-radius: 17px 0 0 17px;}
 .lnb .lnb-list li:last-child a  {border-radius: 0 17px 17px 0;}
 .lnb .lnb-list li:hover a { 
-    background-color: #d4261f;
     color: #ff0;
+    background-color: #d4261f;
 }
 .lnb li.on a{
-    background-color: #d4261f;
     color: #ff0;
+    background-color: #d4261f;
 }
 /* lnb -E */
 .sub-tit{ 

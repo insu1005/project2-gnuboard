@@ -222,20 +222,18 @@
 /* sub1-2 -e */
 
 /* sub1-3 -s */
-.location-wrap { 
-    margin-bottom: 50px; padding: 142px 130px 0;
-}
+.location-wrap { margin-bottom: 50px; padding: 142px 130px 0; }
 .location-map { 
-    margin: 0 auto 80px;
     width: 1000px; height: 600px;
+    margin: 0 auto 80px;
 }
 .location-detail {
     box-sizing: border-box;
     width: 900px; height: 100px;
     margin: 0 auto 170px; padding: 40px 0 0 85px;
+    border-radius: 35px;
     color: #fff;
     background-color: #ff6101;
-    border-radius: 35px;
 }
 .location-detail p { 
     float: left;
@@ -284,8 +282,8 @@
 .bus-direction { 
     float: left;
     box-sizing: border-box;
-    padding-top: 5px;
     width: 600px;
+    padding-top: 5px;
 }
 .bus-direction .bupyeong { 
     float: left;

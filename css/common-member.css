@@ -36,8 +36,8 @@ header {
 .logo{ 
   float: left;
   width: 210px; height: 72px;
-  text-indent: -9999px;
   margin-right: 130px;
+  text-indent: -9999px;
 }
 .logo a {
   display: block;
@@ -48,7 +48,7 @@ header {
   float: left;
   padding-top: 35px;
 }
-.gnb a { font-size: 22px; font-weight: 700; color: #fff;}
+.gnb a { font-weight: 700; font-size: 22px; color: #fff;}
 .depth1 { 
   float: left;
   width: 160px;
@@ -72,9 +72,9 @@ header {
 } 
 .depth2 { 
   display: none;
-  border-radius: 36px;
-  padding: 10px 0;
   width: 100%;
+  padding: 10px 0;
+  border-radius: 36px;
   background-color: #d4261f;
   position: absolute; left: 0; top: 40px; z-index: 10;
   transition: all 0.5s;
@@ -91,7 +91,8 @@ header {
   float: left;
   padding: 0 10px;
 }
-.tnb a { color: #fff; 
+.tnb a { 
+  color: #fff; 
   transition: all 0.5s;
 }
 .depth1:hover::after{transform: scaleX(1);}
@@ -118,8 +119,8 @@ footer{
 }
 .f-menu li {
   float: left; 
-  border-right: 1px solid #999;
   padding: 0 15px;
+  border-right: 1px solid #999;
 }
 .f-menu li:first-child { padding-left: 0;}
 .f-menu li:last-child { border-right: 0;}

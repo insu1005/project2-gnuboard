@@ -52,8 +52,8 @@
 .info-wrap { padding: 100px 170px; }
 .infographic{ 
     float: left;
-    margin-right: 100px;
     width: 450px;
+    margin-right: 100px;
     position: relative;
 }
 .infographic::before{content: "";
@@ -83,17 +83,17 @@
     position: relative;
 }
 .big-circle { 
-    margin: 0 auto 60px;
     width: 150px; height: 150px;
+    margin: 0 auto 60px;
     border-radius: 100%;
-    background-color: rgb(238, 97, 31);
     font-weight: 800; color: #fff; line-height: 150px; text-align: center;
+    background-color: rgb(238, 97, 31);
 }
 .common-circle {
     width: 40px; height: 40px;
     border: 3px solid rgb(238, 97, 31); border-radius: 100%;
-    background-color: #fff;
     font-weight: 800; color: rgb(238, 97, 31); line-height: 34px; text-align: center;
+    background-color: #fff;
     position: absolute; left: 50px; top: 20px;
 }
 .common-circle:nth-of-type(2) { left: 250px;}
@@ -103,9 +103,7 @@
     margin-bottom: 15px;
     font-weight: 800; font-size: 24px; color: rgb(238, 97, 31); line-height: 34px;
 }
-.wellbeing-infographic > p {
-    color: rgb(238, 97, 31);
-}
+.wellbeing-infographic > p { color: rgb(238, 97, 31); }
 .best-circle { 
     width: 500px; height: 500px;
     margin: 0 auto;
@@ -156,10 +154,7 @@
 .best-detail:nth-of-type(4)::after { left: -104px; top: 20px;}
 /* sub4-1 -e */
 /* sub4-2 -s */
-.marketing-box { 
-    padding: 0 200px; 
-    margin-bottom: 50px;
-}
+.marketing-box { margin-bottom: 50px; padding: 0 200px; }
 .marketing-box::before {content: "";
     float: left;
     width: 300px; height: 238px;
@@ -168,15 +163,13 @@
 }
 .marketing-tatics-wrap .box-wrap-tit { 
     float: left;
-    margin: 65px 50px 0 0;
     width: 200px; height: 200px;
+    margin: 65px 50px 0 0;
     border: 5px solid rgb(255, 187, 0); border-radius: 100%;
     background-color: #c00810;
     font-weight:800; font-size: 30px; color: #fff; line-height: 200px; text-align: center;
 }
-.marketing-tatics-wrap .box-wrap-description {
-    float: left;
-}
+.marketing-tatics-wrap .box-wrap-description { float: left; }
 .marketing-tatics-wrap .box-wrap-description .marketing-detail {
     padding: 10px 10px; 
     border: 5px solid #c00810; border-radius: 100px;
@@ -233,13 +226,11 @@
 .online-wrap {margin-bottom: 200px;}
 /* sub4-2 -e */
 /* sub4-3 -s */
-.franchise-allign { 
-    margin-bottom: 170px; padding: 80px 0; 
-}
+.franchise-allign { margin-bottom: 170px; padding: 80px 0; }
 .franchise-detail{ 
     box-sizing: inherit;
-    padding: 80px 0;
     width: 100%; 
+    padding: 80px 0;
     border-collapse: collapse; border-spacing: 0;
 }
 .franchise-detail tr > *{
@@ -281,17 +272,17 @@
 .process-content { 
     float: left;
     box-sizing: border-box;
-    border-radius: 25px;
-    margin: 0 0 50px 53px; padding-top: 60px;
     width: 255px; height: 305px;
-    background-color: #fff;
+    margin: 0 0 50px 53px; padding-top: 60px;
+    border-radius: 25px;
     text-align: center;
+    background-color: #fff;
     position: relative;
 }
 .process-content::before { content: "";
     display: block;
-    margin: 0 auto 30px;
     width: 75px; height: 65px;
+    margin: 0 auto 30px;
     background-image: url(/img/sub-img/process.png);
 }
 .process-content:nth-child(2):before {
@@ -325,8 +316,8 @@
 .process-number {
     width: 35px; height: 35px;
     border-radius: 100%;
-    background-color: #c00810;
     font-weight: 800; color: #fff; line-height: 35px;
+    background-color: #c00810;
     position: absolute; 
     left: 43%; top:-20px;
 }
@@ -334,7 +325,5 @@
     margin-bottom: 20px;
     font-weight: 700; font-size: 24px; line-height: 30px; color: #333;
 }
-.process-description {
-    line-height: 20px;
-}
+.process-description { line-height: 20px; }
 /* sub4-3 -e */
